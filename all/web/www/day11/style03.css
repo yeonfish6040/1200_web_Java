@@ -1,0 +1,47 @@
+body {
+    font-family: 'Square Peg', cursive;
+
+    font-size: 72px;
+}
+
+body > p {
+    background-color: chocolate;
+}
+
+body > div {
+    background-color: goldenrod;
+}
+
+.div01 {
+    width: 50vmax; height: 300px; background-color: pink;
+}
+
+.div02 {
+    width: 50vmax; height: 300px; background-color: deepskyblue;
+}
+
+.span01 {
+    width: 600px; height: 300px; background-color: pink;
+}
+
+.span02 {
+    width: 600px; height: 300px; background-color: deepskyblue;
+}
+
+body > .span03 {
+    background-color: rgb(250, 230, 247);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 150 px;
+}
+
+body > .span04 {
+    background-color: lavender;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 150 px;
+    display: block;
+}
+
+.parents {
+    display: flex;
+    background-color: unset;
+}

@@ -1,0 +1,65 @@
+1. 연산(Operation), 연산자(Operator)
+  (1) 대입연산
+    - =, +=, -=, /=
+    - a = a + 1, a += 1
+    - =: 왼쪽에 오른쪽을 넣으시오
+  (2) 산술연산
+    - 우리가 알고있는 (+-*/), 나머지를 구하는 %, 주민번호 뒷자리 3개 % 33
+    	예) 10 % 3 = 1, 10 / 3 = 3
+  (3) 증감연산
+    - ++,--
+    - ++: 1 증가
+    - --: 1 감소
+    - b = a++ -> b = 10
+    - b = ++a -> b = 11
+    - **순서가 헷갈릴 수 있으니 부니해서 작성하는 것을 추천**
+  (4) 비교연산
+    - a > b: a가 b보다 크면 true, 아니면 false		a = 5 if (a==1) {printf("OK")}
+    - a >= b a < b....
+    - a == b 같으면 True, 다르면 False
+    - a != b 다르면 True 같으면 False
+  (5) 논리연산
+    - A && B 둘다 True면 True		111 & 110 = 110
+    - A || B 둘중 하나라도 True면 True
+    - A ^ B A와 B거 다르면 True (XOR)
+    - !A A의 반대
+  (6) 삼항연산
+    - A ? B : C  A가 True 이면 B, False 이면 C  (if(a){b}else{c})
+2. User Input
+  (1) 실행을 시작할때 받는 방법
+    - java 클래스명 입력1 입력2 입력3 입력4 ......으로 실행하고
+    - args[0], args[1]....으로 사용
+    	야간 배치 작업(정해진 시간이나 조건에 동작하는 작업)에 주로 쓰임
+  (2) Scanner 이용
+    - 아무때나 입력이 필요할 때 사용함
+    - *사용방법
+    	java.utilScanner를 import
+	Scanner sc = new Scanner(System.in)
+	sc.next() 문자열
+	sc.exitInt() 정수
+	sc.nextFloat(), sc.nextDouble 실수
+3. Random
+  (1) 임의의 수를 얻는 도구
+  (2) 사용 방법:
+    - java.util.Random을 import
+    - Random rd = new Random();
+    - 다양한 방식으로 사용한다
+	rd.nextInt() -2147483648 ~ 2147483647
+	rd.nextInt(숫자) 0~숫자-1 까지의 수 (정수)
+	rd.nextFloat, rd.nextDouble()
+4. 제어문
+  (1) 프로그램 언어에서 실행 순서를 변경하거나 조건에 따라 실행하거나 특정 부분은 반복하거나 할 경우 쓰는 구문
+  (2) 프로그램은 일반적으로 위에서 아래로 순차적으로 실행
+  (3) 제어문의 종류
+    - 조건문, 반복문, 기타 제어문 // 기타 제어문은 반복문의 하위 개념
+	조건문의 종류: if, switch		
+   	반복문의 종류: while, for, do ~ while
+	기타 제어문: break, continue
+    - 조건문
+	"조건에 따라 달라지는 것"을 구현하는 문장
+	1) if 문(if Statement)
+	  - if (조건) { 실행 }
+	  - if (조건) { 실행 } else if (조건) { 실행 } else { 실행 }
+	2) switch 문
+	  - switch ~ case
+	  - switch(변수) { case 값: 실행; case 값: 실행; default: 실행; }

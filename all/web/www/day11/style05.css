@@ -1,0 +1,30 @@
+.box3 {
+    width: 300px;
+    height: 100px;
+    background-color: crimson;
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.box-align {
+    justify-content: space-around;
+    /* justify-content: space-evenly; 모든 요소간의 거리를 동일 */
+    /* justify-content: space-between; 앞 뒤 요소를 고려하지 않고 요소간의 거리만 중요*/
+    /* justify-content: space-center; 가운데로부터 배치 */
+}
+
+.box-align-center {
+    justify-content: center;
+}
+
+.box-align-end {
+    justify-content: flex-end; /* 뒤쪽부터 */
+}

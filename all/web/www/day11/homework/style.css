@@ -1,0 +1,36 @@
+.group1 {
+    margin-bottom: 5px;
+}
+
+.smallGroup {
+    display: flex;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: green;
+}
+
+.box3 {
+    background-color: yellow;
+}
+
+.box4 {
+    background-color: blue;
+}
+
+.spaced .box {
+    margin: 5px;
+}
+
+.centered {
+    justify-content: center;
+}

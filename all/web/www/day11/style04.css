@@ -1,0 +1,32 @@
+div {
+    width: 200px;
+    height: 150px;
+    border: 1px solid gray;
+    font-size: 1em;
+    text-align: center;
+    line-height: 100px;
+}
+
+.wrap {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
+
+.absolute {
+    position: absolute;
+    left: 130px;
+    top: 30px;
+}
+
+.relative {
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.fixed {
+    position: fixed;
+    top: 30px;
+    left: 130px;
+}
