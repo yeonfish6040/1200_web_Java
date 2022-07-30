@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>script 태그에 코드 작성</title>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h3>마우스를 올려보실려면 올려보시던가...</h3>
+        <hr>
+        <img src="./img/hello.jpg" alt="오류ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ" onmouseover="over(this)" onmouseout="out(this)" ondblclick="dbClick(this)">
+    </body>
+    <script>
+        const over = (args) => {
+            args.src = "./img/hello2.jpg"
+        }
+        const out = (args) => {
+            args.src = "./img/hello.jpg"
+        }
+        const dbClick = (args) => {
+            args.src = "./img/hello3.png"
+        }
+    </script>
+</html>

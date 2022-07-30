@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./js/util.js"></script>
+    </head>
+    <body>
+        <div>test</div>
+    </body>
+    <script>
+        $(() => {
+            run()
+
+            function run() {
+                console.log(getPermutations([0, 1], 3));
+                element = getPermutations([0, 1], 3)[1]
+                go(element, () => {
+                    element = getPermutations([0, 1], 3)[2]
+                    go(element, () => {
+                        element = getPermutations([0, 1], 3)[3]
+                        go(element, () => {
+                            element = getPermutations([0, 1], 3)[4]
+                            go(element, () => {
+                                element = getPermutations([0, 1], 3)[5]
+                                go(element, () => {
+                                    element = getPermutations([0, 1], 3)[6]
+                                    go(element, () => {
+                                        element = getPermutations([0, 1], 3)[7]
+                                        go(element, () => {
+                                            run()
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            }
+
+            async function go(element, callback) {
+                c = [255, 255, 255]
+                up = [false, false, false]
+                i = 0
+                inter = await setInterval(() => {
+                    if (i == 510) {
+                        clearInterval(inter)
+                        callback()
+                    }
+                    if (element[0] == 1){
+                        if (up[0]){
+                            c[0]++
+                            if (c[0] == 255) {
+                                up[0] = false
+                            }
+                        }else{
+                            c[0]--
+                            if (c[0] == 0) {
+                                up[0] = true
+                            }
+                        }
+                    }
+                    if (element[1] == 1){
+                        if (up[1]){
+                            c[1]++
+                            if (c[1] == 255) {
+                                up[1] = false
+                            }
+                        }else{
+                            c[1]--
+                            if (c[1] == 0) {
+                                up[1] = true
+                            }
+                        }
+                    }
+                    if (element[2] == 1){
+                        if (up[2]){
+                            c[2]++
+                            if (c[2] == 255) {
+                                up[2] = false
+                            }
+                        }else{
+                            c[2]--
+                            if (c[2] == 0) {
+                                up[2] = true
+                            }
+                        }
+                    }
+                    $("div").css("background-color", `rgb(${c[0]}, ${c[1]}, ${c[2]})`)
+                    console.log(`${c[0]}, ${c[1]}, ${c[2]}`);
+                    i++
+                }, 10)
+            }
+        })
+    </script>
+</html>

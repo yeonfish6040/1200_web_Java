@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>입력 대화상자 prompt</title>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        input = prompt("니 이름이 뭐냐")
+        console.log(typeof input.length);
+        regex = /[가-힣]{2,4}/g
+        if (input.length >= 2 && input.length <= 4 && regex.test(input)) {
+            document.write(`<h1>${input}님 돈. 줘요</h1>`)
+        }else{
+            document.write(`<h1>${input}</h1><h3>이 이름이라고? ㅋ</h3>`)
+        }
+    </script>
+</html>

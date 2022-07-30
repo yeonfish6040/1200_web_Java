@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>confirm</title>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        function reject() {
+            alert("ㄲㅂ")
+            window.close()
+        }
+        c = confirm("1억 결제 할거야??")
+        if (!c) {
+            reject()
+        }else{
+            c = confirm("진짜로?")
+            if (!c) {
+                reject()
+            }else{
+                c = confirm("후회해도 난 몰라?")
+                if (!c) {
+                    reject()
+                }else{
+                    c = confirm("진짜지?")
+                    if (!c) {
+                        reject()
+                    }else{
+                        c = confirm("한다????")
+                        if (!c) {
+                            reject()
+                        }else{
+                            alert("먹튀 꺼-억");
+                            window.close()
+                        }
+                    }    
+                }
+            }
+        }
+    </script>
+</html>
