@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>global function</title>
+        <meta charset="utf-8">
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        function isGlobalFunc(){
+            var result1 = eval("2*3+4*6")
+            var result2 = parseInt("hellow")
+            console.log(typeof result1);
+            document.write(`eval("2*3+4*6")은 ${result1}`)
+            console.log(result2);
+
+            if(isNaN(result2)) console.log(`숫자 아님`);
+            else console.log(`숫자임`);
+            if(isFinite(result2)) console.log(`숫자임ㅇㅇㅇㅇㅇㅇㅇ`);
+            else console.log(`숫자 아니이이이이이임`);
+        }
+        isGlobalFunc()
+    </script>
+</html>

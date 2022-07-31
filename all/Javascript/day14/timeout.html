@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timeouts</title>
+        <meta charset="utf-8">
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    </head>
+    <body>
+        <h1>마우스를 올려보세요</h1>
+        <hr>
+        <div onmouseover="body.style.background='yellow'" onmouseout="body.style.background='white'">
+            여기여기여기
+        </div>
+        <h1>지정된 시간이 지나고 함수 실행</h1>
+        <div id="wrap"></div>
+    </body>
+    <script>
+        // function formatYourComputer(){
+        //     document.write("<p>네 피씨는 이제 포맷된다 ㅎㅎㅎ</p>")
+        // }
+        // setTimeout(formatYourComputer, 3000)
+
+        // setTimeout(() => {
+        //     document.write("<p>니 피씨 포맷된다니까?</p>")
+        // },5000)
+        function formatYourComputer2() {
+            const div = document.getElementById('wrap')
+            let h2 = document.createElement('h2')
+            h2.innerHTML = "너 이제 큰일났다"
+            div.appendChild(h2)
+        }
+        var i = setInterval(formatYourComputer2, 1000)
+        setTimeout(() => {
+            clearInterval(i)
+        }, 20000);
+    </script>
+</html>

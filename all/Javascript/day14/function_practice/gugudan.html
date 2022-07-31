@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>구구단</title>
+        <meta charset="utf-8">
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    </head>
+    <body>
+        <h1>구구단</h1>
+        <h2>사용자님께서 입력하신 단으로 출력해드립니다</h2>
+    </body>
+    <script>
+        while(1) {
+            var input = prompt("몇 단으로 해주랴?")
+            input = parseInt(input.split(".")[0])
+            if(isNaN(input)) continue;
+            getGuGuDan(input).forEach(element => {
+                document.writeln(`${element}<br>`)
+            });
+            break
+        }
+        function getGuGuDan(num) {
+            result = []
+            for (i=0;i<num;i++){
+                result.push(`${num}*${i+1}=${(i+1)*num}`)
+            }
+            return result
+        }
+    </script>
+</html>
