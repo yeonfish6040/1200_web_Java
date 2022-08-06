@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>date Test</title>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="0.05">
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    </head>
+    <body>
+        <h3>님이 방문하신 시각에 따라 배경색이 바뀌십니다.</h3>
+        <hr>
+        
+    </body>
+    <script>
+        var now = new Date()
+        t1 = now.getTime()
+        if (now.getSeconds() % 3 == 0)
+            document.body.style.background = "violet";
+        else if (now.getSeconds() % 3 == 1)
+            document.body.style.background = "lightskyblue";
+        else
+            document.body.style.background = "crimson";
+        t2 = now.getTime()
+        console.log(`수행시간: ${t2-t1}`);
+    </script>
+</html>

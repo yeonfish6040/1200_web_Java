@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>getByClass</title>
+        <meta charset="utf-8">
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    </head>
+    <body>
+        <h3>클래스 이름을 이용하여 선택</h3>
+        <hr>
+        <ul>
+            <li class="Odd First">첫 번째 아이템</li>
+            <li>두 번째 아이템</li>
+            <li class="Odd">세 번째 아이템</li>
+            <li>네 번째 아이템</li>
+            <li class="Odd">다섯 번째 아이템</li>
+        </ul>
+    </body>
+    <script>
+        // console.log(document.getElementsByClassName("Odd"));
+        var els = document.getElementsByClassName("Odd")
+        console.log(els);
+        for(i in els) {
+            if (isNaN(i)) break // i가 숫자가 아닌 아이템이면 탈출
+            console.log(els[i].style.color = "red");
+            console.log(els[i].style);
+        }
+        
+        var els2 = document.getElementsByClassName("First")
+
+    </script>
+</html>

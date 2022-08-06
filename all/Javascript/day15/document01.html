@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>name을 이용한 선택</title>
+        <meta charset="utf-8">
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    </head>
+    <body>
+        <h3>name 속성을 이용한 선택</h3>
+        <hr>
+        <form name="joinForm" method="get" target="#">
+            <div><input type="text" name="id"></div>
+            <div><input type="password" name="pw"></div>
+            <div>
+                <input type="checkbox" name="lang" value="Java" checked> Java
+                <input type="checkbox" name="lang" value="C"> C
+                <input type="checkbox" name="lang" value="Python"> Python
+            </div>
+            <div><input type="submit" value="go"></div>
+        </form>
+    </body>
+    <script>
+        console.log(joinForm);
+        console.log(joinForm.id);
+        console.log(document.getElementsByName("lang"));
+
+        const checkboxes = document.getElementsByName("lang")
+        checkboxes.forEach(cBox => {
+            console.log(cBox);
+            cBox.checked = true
+        })
+        checkboxes.forEach(cBox => {
+            console.log(cBox.checked)
+            console.log(cBox.getAttribute("checked"));
+            console.log(cBox);
+            if (cBox.checked) {
+                cBox.checked = false
+            }
+        })
+
+    </script>
+</html>

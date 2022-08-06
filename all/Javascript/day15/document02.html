@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS 선택자를 이용한 선택</title>
+        <meta charset="utf-8">
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+        <style>
+            label[for='attach'] div {
+                width: 150px;
+                height: 150px;
+                background-image: url('./img/a.png');
+                background-size: 100% 100%;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>CSS 선택자를 이용한 선택</h3>
+        <hr>
+        <p class="odd">첫 번째 단락</p>
+        <ul>
+            <li class="odd">순대</li>
+            <li class="even">떡볶이</li>
+            <li class="odd">탕수육</li>
+            <li class="even">돈까스</li>
+            <li class="odd">피자</li>
+        </ul>
+
+        <h3>객체를 동적으로 생성, 삽입, 삭제</h3>
+        <hr>
+        <p>DOM Tree에 동적으로 객체를 삽입할 수 있다.</p>
+        <p>createElement("태그명"), appendChild("태그객체"), removeChild("태그객체")</p>
+        <a href="javascript:createDIV()">DIV 생성</a>
+
+        <h3>CSS 동적 스타일 변경</h3>
+        <hr>
+        <p>
+            나비가 <span>이유는 모르겠지만 날고 있어요</span>
+        </p>
+        <input type="button" value="스타일 바꾸기">
+
+        <h3>첨부파일 썸네일</h3>
+        <hr>
+        <label for="attach">
+            <div></div>
+        </label>
+        <input type="file" name="attach" id="attach" style="display: none">
+    </body>
+    <script>
+        // querySelector
+        const li_odd = document.querySelectorAll("li.odd");
+        const li_even = document.querySelectorAll("li.even")
+        const li_all = document.querySelectorAll("li")
+
+        // 홀수는 글자색을 빨간색으로
+        // li_odd.forEach(e => e.style.color = 'red')
+
+        // li_even.forEach(e => e.style.color = 'magenta')
+
+        li_all.forEach(e =>  e.style.color = e.getAttribute("class") == "odd" ? "red" : "magenta")
+
+        function createDIV() {
+            const newDIV = document.createElement("div")
+            newDIV.innerHTML = "지금 생성된겁니다. 오래된거 아닙니다;;"
+            newDIV.style.backgroundColor = "yellow"
+            document.body.appendChild(newDIV)
+
+            // 추가된 div객체를 클릭하면 해당 객체 삭제
+            newDIV.addEventListener("click", () => {
+                // div객체의 부모객체로 자식객체(this) 지우기
+                newDIV.parentElement.removeChild(newDIV);
+            })
+        }
+
+        const span = document.getElementsByTagName("span")[0];
+        const input = document.querySelector("input[type='button']")
+
+        // input.addEventListener('click', function() {
+        //     this.style.backgroundColor = "yellow"
+        //     span.style.fontSize = "30px"
+        //     span.style.border = "3px dotted magenta"
+        //     span.style.width = "500px"
+        //     span.style.display = "inline-block"
+        // })
+
+        input.onclick = function() {
+            this.style.backgroundColor = "yellow"
+            span.style.fontSize = "30px"
+            span.style.border = "3px dotted magenta"
+            span.style.width = "500px"
+            span.style.display = "inline-block"
+        }
+
+        const file = document.querySelector("input[type='file']")
+        const thumbnail = document.querySelector("label[for='attach'] div")
+
+        // 첨부파일이 등록되었다면
+        file.addEventListener('change', function(evt) {
+            console.log("File Button Operation");
+            var reader = new FileReader()
+            reader.readAsDataURL(event.target.files[0])
+
+            // 등록이 완료되었다면 reader 객체의 load 이벤트 발생
+            reader.onload = (evt) => {
+                if (evt.target.result.includes("image")){
+                    console.log(`이미지 파일 입니다`);
+                    thumbnail.style.backgroundImage = `url("${event.target.result}")`
+                } else
+                    console.log(`이미지 파일이 아닙니다`);
+            }
+        })
+    </script>
+</html>
