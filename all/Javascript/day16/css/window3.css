@@ -1,0 +1,7 @@
+div#img {
+    background-image: url("../img/event.png");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 220px;
+    height: 220px;
+}

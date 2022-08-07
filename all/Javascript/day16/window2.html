@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>팝업화면</title>
+        <meta charset="utf-8">
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    </head>
+    <body>
+        <a href="javascript:opener.parent.location='window3.html?ok=true&fuckyou=false';window.close()">팝업</a>
+        <div>
+            <label>
+                <input type="checkbox" value="ok">
+                <span>오늘 하루 이 창 열지 않기</span>
+            </label>
+        </div>
+    </body>
+    <script>
+        var checkbox = document.querySelector("input[type='checkbox']")
+        checkbox.addEventListener('click', function() {
+            var check = this.checked
+            if (check) {
+                window.close()
+            }
+        })
+    </script>
+</html>
