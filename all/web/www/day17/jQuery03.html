@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery 전체동의</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="" name="myform">
+            <div>
+                <div><label>전체동의 <input type="checkbox" class="all"></label></div>
+                <div><label>서비스 이용 약관 동의 <input type="checkbox" class="term" name="term1"></label></div>
+                <div><label>정보 수집 동의 <input type="checkbox" class="term" name="term2"></label></div>
+                <div><label>개인정보 이용 약관 동의 <input type="checkbox" class="term" name="term3"></label></div>
+            </div>
+        </form>
+
+        <ul class="dessert">
+            <li>커피</li>
+            <li>케이크</li>
+            <li>콜라</li>
+            <li>아이스크림</li>
+            <li>매운갈비찜</li>
+            <li>순대볶음</li>
+            <li>파르페</li>
+        </ul>
+        <div id="div1" style="cursor: pointer;">이거 절대 누르지마</div>
+        <div id="div2" style="cursor: pointer;">이거 절대 누르지마</div>
+        <div id="div3" style="cursor: pointer;">이거 절대 누르지마</div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var $all = $('.all')
+        var $term = $('.term')
+        $all.on('click', () => {
+            if($all.is(":checked") == true) {
+                $term.prop("checked", true)
+            }else {
+                $term.prop("checked", false)
+            }
+        })
+        $term.on("click", () => {
+            if ($(this).is(":checked") == false) {
+                $all.prop("checked", false)
+            }
+
+            if ($term.filter(":checked").length == 3) {
+                $all.prop("checked", true)
+            }
+        })
+
+        const $div1 = $("#div1")
+        const $div2 = $("#div2")
+        const $div3 = $("#div3")
+        const $ul = $('ul')
+        $div1.on("click", () => {
+            $ul.toggle(100000)
+        })
+        $div2.on("click", () => {
+            $ul.fadeToggle(100000)
+        })
+        $div3.on("click", () => {
+            $ul.slideToggle(100000)
+        })
+    </script>
+</html>

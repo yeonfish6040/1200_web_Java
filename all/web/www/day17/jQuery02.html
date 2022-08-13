@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery02</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <ul class="bag">
+            <li>Hermes</li>
+            <li>Channel</li>
+            <li>Givenchy</li>
+        </ul>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var lists = $('li')
+        var bags = $('.bag')
+        console.log(bags.children());
+        console.log(bags.children().first().text())
+        console.log(bags.parents());
+        bags.children().eq(-1).remove()
+        console.log(bags.children().eq(1).text());
+        bags.append("<li>miumiu</li>")
+        console.log(bags.attr("class"));
+        bags.attr("class", "superCar")
+        console.log(bags.attr("class"));
+    </script>
+</html>

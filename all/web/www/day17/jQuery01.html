@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery practice</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div><input type="text" class="num" value="1"></div>
+        <div><input type="text" class="num" value="2"></div>
+        <div><input type="text" class="num" value="3"></div>
+        <div>
+            <button onclick="change()">javascript(일반)</button>
+            <button onclick="$('.num').css('border-color', 'blue')">jQuery</button>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function change() {
+            var inputs = document.querySelectorAll(".num")
+            inputs.forEach((e, i, original) => {
+                e.style.borderColor = "red"
+            })
+        }
+    </script>
+</html>
