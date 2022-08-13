@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="exlib/jsoup-1.15.1.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="Java_class_2,MyUtil,Java_class_6.Inher,Java_class_7,Java_class_8.Thread,Java_class_3,Java_class_7.Exception,Java_class_7.Inter3,Java_class_5,Java_class_7.Inter1,Java_class_1,Java_class_8,Java_class_4,Java_class_6.HomeWork,Java_class_6.Inher2,Java_class_7.Exception2,Java_class_7.Inter2,Java_class_6,Java_class_8.Stream,Java_class_8.Swing" source="16" sourcepath="src" splitindex="true" use="true" version="true">
+            <link href="file:/D:/1200_web_yeonjun/Java01/doc/"/>
+        </javadoc>
+    </target>
+</project>

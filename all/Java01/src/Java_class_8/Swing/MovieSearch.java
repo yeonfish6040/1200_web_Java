@@ -99,7 +99,7 @@ public class MovieSearch extends JFrame implements ActionListener {
 			Elements actual_points = pointDoc.select("div#actual_point_tab_inner>em");
 			System.out.println(netizen_points.text().replace(" ", ""));
 			System.out.println(actual_points);
-			String showText = "네티즌 평점: "+netizen_points.text().replace(" ", "")+", 관람객 평점: "+actual_points.text().replace(" ", "");
+			String showText = "네티즌 평점: "+netizen_points.text().replace(" ", "");
 			score.setText(showText);
 		} catch (Exception e) {
 			e.printStackTrace();

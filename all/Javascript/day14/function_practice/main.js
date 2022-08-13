@@ -2,7 +2,7 @@ const fs = require(`fs`)
 
 main(9)
 
-async function main(step) {
+function main(step) {
     funcDir = `./functions`
     func = {}
     fs.readdir(funcDir, (err, files) => {

@@ -86,3 +86,5 @@ BOm은 DOM과 달리 W3C의 표준은 아니지만
 
 12. Java와 MariaDB 연동
     1) Connector를 위한 Jar 다운로드
+    2) 프로젝트에 Jar 등록
+    

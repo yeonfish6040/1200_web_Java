@@ -3,7 +3,6 @@ package Java_class_3;
 public class test {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 		int i = 1200;
 		int j = 1000000;
 		while(i >= 0) {
