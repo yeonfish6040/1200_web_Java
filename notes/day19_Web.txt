@@ -1,0 +1,31 @@
+1. Unique Key
+(1) 해당 값이 동인한 row가 없게 하는 조건
+(2) Primary Key와의 차이점
+	PK는 테이블에 하나만 존재하지만 UK는 여러 개 존재 가능
+	NULL을 미확정(NULL끼리 서로 다른 값으로 인정)으로 본다
+	
+2. Dual(Oracle, MySQL 계열)
+- 오라클이나 MySQL이 기본적으로 제공하는 테이블
+- 컬럼은 한나만 존재, 시퀸스, 날짜함수, 산술연산에 사용
+- 웹서버에서 DB서버가 살아있는지 체크할 때 많이 사용
+
+3. MariaDB Built-in Function
+(1) single row function: 한줄 입력, 한줄 출력
+	1) Numberic
+		abs(x), ceil(x), floor(x), round(x, y)
+	2) Text
+		(str): lower, upper, length
+		substr(str, m, n)
+		lpad(str, n, text), rpad(str, n, text)
+		concat(str1, str2)
+		replace(str, fstr, sstr)
+	3) Date
+		add_months()
+	4) Conversion
+		to_char()
+	
+(2) group(aggregate) function: 여러 줄 입력, 한 줄 출력
+	1) count(*), distinct
+	2) min(), max(), avg(), sum()
+	
+	* group by, order by, having
