@@ -34,7 +34,6 @@ public class sqlQuery {
 		
 		stmt = conn.createStatement();
 		String sql = "INSERT INTO "+table+"("+col+") VALUES("+val+")";
-		System.out.println(sql);
 		int rows = stmt.executeUpdate(sql);
 		return rows;
 	}
@@ -55,14 +54,12 @@ public class sqlQuery {
 		
 		stmt = conn.createStatement();
 		String sql = "UPDATE "+table+" SET "+temp+" WHERE "+get[0][index]+"='"+get[1][index]+"'";
-		System.out.println(sql);
 		int rows = stmt.executeUpdate(sql);
 		return rows;
 	}
 	
 	public int delete(String table, String[] data) throws Exception {
 		String sql = "DELETE FROM "+table+" WHERE "+data[0]+"='"+data[1]+"'";
-		System.out.println(sql);
 		stmt = conn.createStatement();
 		int rows = stmt.executeUpdate(sql);
 		return rows;
@@ -93,11 +90,11 @@ public class sqlQuery {
 			}
 			j++;
 		}
-		sqlResults re = new sqlResults(result);
+		sqlResults re = new sqlResults(result, column_count);
 		return re;
 	}
 	
-	private String[] getClean(String[][] raw) {
+	protected String[] getClean(String[][] raw) {
 		String[] vals = new String[raw.length];
 		int i = 0;
 		for(String[] raw2:raw) {
