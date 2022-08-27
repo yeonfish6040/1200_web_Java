@@ -1,9 +1,12 @@
 package MyUtil.sql;
 
+import javax.swing.*;
+import java.io.File;
+import java.util.Scanner;
+import java.util.Iterator;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Iterator;
-import javax.swing.*;
+import java.io.FileNotFoundException;
 
 import MyUtil.Stopwatch;
 
@@ -16,11 +19,9 @@ public class sql_run extends JFrame implements ActionListener {
 	JScrollPane sp1 = null;
 	JScrollPane sp2 = null;
 
-	sql_run(){
-		sq =  new sqlQuery("localhost", "3307", "root", "root", "java");
-		if (sq.cStatus()) {
-			
-		}
+	sql_run(String[] loginInfo){
+		// host port id pw db
+		sq =  new sqlQuery(loginInfo[0], loginInfo[1], loginInfo[2], loginInfo[3], loginInfo[4]);
 		
 		l1 = new JLabel("쿼리문");
 		l1.setBounds(20, 20, 100, 30);
@@ -94,6 +95,7 @@ public class sql_run extends JFrame implements ActionListener {
 		}
 	}
 	public static void main(String[] args) {
-		new sql_run();
+		String[] loginInfo = {"localhost", "3307", "root", "root", "java"};
+		new sql_run(loginInfo);
 	}
 }
