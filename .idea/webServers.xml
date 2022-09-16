@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="90bdc99d-6355-4014-823c-146c0fd72819" name="lyj" url="https://lyj.kr">
+        <fileTransfer rootFolder="/home/web" accessType="SFTP" host="lyj.kr" port="22" sshConfigId="6db09140-f229-4cfe-908f-00cb3a4db631" sshConfig="web@lyj.kr:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

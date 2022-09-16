@@ -1,0 +1,17 @@
+1. 액션 태그
+	서버나 클라이언트에게 어떤 행동을 하도록 명령하는 태그
+	페이지와 페이지 사이를 제어하거나 다른 페이지의 실행 결과 내용을
+	현재 체이지에 포함하거나 자바빈즈
+	
+	1: forward <jsp:forward />
+		다른 페이지로의 이동
+	2: include <jsp:include />
+		외부 페이지의 내용을 포함
+	3: param <jsp:param />
+		현재 페이지에서 다른 페이지에 정보를 전달	
+		
+		
+	4: useBean <jsp:useBean />
+		Java 파일에 있는 객체를 가지고 온다 == new asdf() setter
+	5: setProperty <jsp:setProperty />
+		자바빈즈의 프로퍼티 값을 가져온다 getter
