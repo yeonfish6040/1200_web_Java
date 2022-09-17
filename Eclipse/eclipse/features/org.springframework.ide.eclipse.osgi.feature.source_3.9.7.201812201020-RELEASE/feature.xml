@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*******************************************************************************
+ * Copyright (c) 2005, 2009 Spring IDE Developers
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ * 
+ * Contributors:
+ *     Spring IDE Developers - initial API and implementation
+ *******************************************************************************/
+ -->
+<feature
+      id="org.springframework.ide.eclipse.osgi.feature.source"
+      label="%featureName"
+      version="3.9.7.201812201020-RELEASE"
+      provider-name="%providerName"
+      plugin="org.springframework.ide.eclipse">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseUrl">
+      %license
+   </license>
+
+   <plugin
+         id="org.springframework.ide.eclipse.osgi.source"
+         download-size="55"
+         install-size="107"
+         version="3.9.7.201812201020-RELEASE"
+         unpack="false"/>
+
+   <plugin
+         id="org.springframework.ide.eclipse.osgi.targetdefinition.source"
+         download-size="4173"
+         install-size="4729"
+         version="3.9.7.201812201020-RELEASE"
+         unpack="false"/>
+
+   <plugin
+         id="org.springframework.ide.eclipse.osgi.runtime.source"
+         download-size="34"
+         install-size="71"
+         version="3.9.7.201812201020-RELEASE"
+         unpack="false"/>
+
+   <plugin
+         id="org.springframework.ide.eclipse.osgi.blueprint.source"
+         download-size="122"
+         install-size="381"
+         version="3.9.7.201812201020-RELEASE"
+         unpack="false"/>
+
+</feature>
