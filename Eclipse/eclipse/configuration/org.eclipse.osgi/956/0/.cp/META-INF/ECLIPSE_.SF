@@ -1,0 +1,46 @@
+Signature-Version: 1.0
+Created-By: 11.0.11 (AdoptOpenJDK)
+SHA-256-Digest-Manifest: sV6SACZCqKUNreoAO7NqrA9rbl5YCHZwIuPyucoWhkQ=
+SHA-256-Digest-Manifest-Main-Attributes: m0/z/3xJq/Sqi8DDbevpNqo88BSuJzM
+ QtHpQ+/wdnCg=
+
+Name: org/aopalliance/intercept/ConstructorInterceptor.class
+SHA-256-Digest: XJ9jW7oIU74VoC2IC6QRBkbJ4lz62zvjhqRwJ89zNtw=
+
+Name: about.html
+SHA-256-Digest: sW5vyXG9joSo4hraZPnElA3c8HMS+adwKBunEjJ5ulc=
+
+Name: org/aopalliance/intercept/MethodInvocation.class
+SHA-256-Digest: wc19LzpwcghOoDPgR5QznzQC1TqLYUTX3Q/hnLSKtvA=
+
+Name: org/aopalliance/intercept/MethodInterceptor.class
+SHA-256-Digest: RTg2H7yjHtUKkeVXP64tJYobS1c21sLKMd9L05IThsY=
+
+Name: org/aopalliance/intercept/Invocation.class
+SHA-256-Digest: wIWGuD3c9SWQx0sJTAHvnWWa7M+FPc99lJy7TdOlmaw=
+
+Name: org/aopalliance/aop/AspectException.class
+SHA-256-Digest: /FNhp1VQEUrCXAeclWwimamzdhllc+zx+n8zNA+/67M=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.aopalliance/pom.prope
+ rties
+SHA-256-Digest: 7FFivN55dCROq5zIeQsQ0UfrYqvdpIW9aig8hpzhNeg=
+
+Name: org/aopalliance/intercept/Interceptor.class
+SHA-256-Digest: 3OnuJgYY6XWCniNU8+pfCoZLA1UazwQCmLwlxkdUYUo=
+
+Name: org/aopalliance/intercept/Joinpoint.class
+SHA-256-Digest: qOM0PwhM5Bty87zItvocmynuTPCno2bcuUDtx2kLaH0=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.aopalliance/pom.xml
+SHA-256-Digest: F2gXhTCRgJFnNwWuIYCNaHrnR74QCQnlaRdEtBQyvVg=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: CvDRK4sD8Fw/TuYJxC3q3wyKbWyLqaqacH0V1YXNRBk=
+
+Name: org/aopalliance/aop/Advice.class
+SHA-256-Digest: Tc50IWnDXrqvavbsWFQLBmB2VXI0vbJsl11t5EF9ZUM=
+
+Name: org/aopalliance/intercept/ConstructorInvocation.class
+SHA-256-Digest: I7M6fIK799sZ4pkyKkg0RZ5TnSXDBJ2KYmmP/pw6MIY=
+
