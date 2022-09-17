@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name="Spring Tool Suite 3 Update Site for Eclipse 4.17" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository" version="1.0.0">
+	<properties size="1">
+		<property name="p2.timestamp" value="1243822502508"/>
+	</properties>
+	<children size="1">
+		<child location="https://download.springsource.com/release/TOOLS/update/3.9.15.RELEASE/e4.17/"/>
+	</children>
+</repository>

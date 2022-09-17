@@ -138,15 +138,6 @@ repositories/https\:__download.eclipse.org_technology_epp_packages_latest/suffix
 repositories/https\:__download.eclipse.org_technology_epp_packages_latest/type=org.eclipse.equinox.internal.p2.metadata.repository.CompositeArtifactRepository
 repositories/https\:__download.eclipse.org_technology_epp_packages_latest/uri=https\://download.eclipse.org/technology/epp/packages/latest/
 repositories/https\:__download.eclipse.org_technology_epp_packages_latest/version=1.0.0
-repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7/description=
-repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7/enabled=true
-repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7/isSystem=false
-repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7/name=CDT 10.7 Update Site
-repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7/provider=
-repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7/suffix=compositeArtifacts.xml
-repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7/type=org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository
-repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7/uri=https\://download.eclipse.org/tools/cdt/releases/10.7
-repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7/version=1.0.0
 repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7_cdt-10.7.0/description=
 repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7_cdt-10.7.0/enabled=false
 repositories/https\:__download.eclipse.org_tools_cdt_releases_10.7_cdt-10.7.0/isSystem=true
@@ -205,3 +196,6 @@ repositories/https\:__download.springsource.com_release_TOOLS_update_3.9.7.RELEA
 repositories/https\:__download.springsource.com_release_TOOLS_update_3.9.7.RELEASE_e4.8/type=org.eclipse.equinox.p2.artifact.repository.simpleRepository
 repositories/https\:__download.springsource.com_release_TOOLS_update_3.9.7.RELEASE_e4.8/uri=https\://download.springsource.com/release/TOOLS/update/3.9.7.RELEASE/e4.8/
 repositories/https\:__download.springsource.com_release_TOOLS_update_3.9.7.RELEASE_e4.8/version=1.0.0
+repositories/https\:__download.springsource.com_release_TOOLS_update_e4.17/enabled=true
+repositories/https\:__download.springsource.com_release_TOOLS_update_e4.17/isSystem=false
+repositories/https\:__download.springsource.com_release_TOOLS_update_e4.17/uri=https\://download.springsource.com/release/TOOLS/update/e4.17/
