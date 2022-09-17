@@ -15,6 +15,7 @@ com.jcraft.jsch,0.1.55.v20190404-1902,plugins/com.jcraft.jsch_0.1.55.v20190404-1
 com.sun.el,2.2.0.v201303151357,plugins/com.sun.el_2.2.0.v201303151357.jar,4,false
 com.sun.jna,5.8.0,plugins/com.sun.jna_5.8.0.jar,4,false
 com.sun.jna.platform,5.8.0,plugins/com.sun.jna.platform_5.8.0.jar,4,false
+io.projectreactor.reactor-core,3.3.1.202003091750-RELEASE,plugins/io.projectreactor.reactor-core_3.3.1.202003091750-RELEASE.jar,4,false
 jakarta.el,4.0.0.v20210105-0527,plugins/jakarta.el_4.0.0.v20210105-0527.jar,4,false
 jakarta.enterprise.cdi-api,2.0.2,plugins/jakarta.enterprise.cdi-api_2.0.2.jar,4,false
 jakarta.interceptor-api,1.2.5,plugins/jakarta.interceptor-api_1.2.5.jar,4,false
@@ -62,9 +63,9 @@ org.apache.batik.util,1.14.0.v20210324-0332,plugins/org.apache.batik.util_1.14.0
 org.apache.bcel,5.2.0.v201005080400,plugins/org.apache.bcel_5.2.0.v201005080400.jar,4,false
 org.apache.commons.codec,1.14.0.v20200818-1422,plugins/org.apache.commons.codec_1.14.0.v20200818-1422.jar,4,false
 org.apache.commons.collections,3.2.2.v20220405-1659,plugins/org.apache.commons.collections_3.2.2.v20220405-1659.jar,4,false
+org.apache.commons.commons-io,2.11.0,plugins/org.apache.commons.commons-io_2.11.0.jar,4,false
 org.apache.commons.compress,1.21.0.v20211103-2100,plugins/org.apache.commons.compress_1.21.0.v20211103-2100.jar,4,false
 org.apache.commons.discovery,0.2.0.v201004190315,plugins/org.apache.commons.discovery_0.2.0.v201004190315/,4,false
-org.apache.commons.io,2.8.0.v20210415-0900,plugins/org.apache.commons.io_2.8.0.v20210415-0900.jar,4,false
 org.apache.commons.jxpath,1.3.0.v200911051830,plugins/org.apache.commons.jxpath_1.3.0.v200911051830.jar,4,false
 org.apache.commons.lang,2.6.0.v20220406-2305,plugins/org.apache.commons.lang_2.6.0.v20220406-2305.jar,4,false
 org.apache.commons.lang3,3.1.0.v201403281430,plugins/org.apache.commons.lang3_3.1.0.v201403281430.jar,4,false
@@ -907,9 +908,14 @@ org.osgi.util.measurement,1.0.2.201802012109,plugins/org.osgi.util.measurement_1
 org.osgi.util.position,1.0.1.201505202026,plugins/org.osgi.util.position_1.0.1.201505202026.jar,4,false
 org.osgi.util.promise,1.2.0.202109301733,plugins/org.osgi.util.promise_1.2.0.202109301733.jar,4,false
 org.osgi.util.xml,1.0.2.202109301733,plugins/org.osgi.util.xml_1.0.2.202109301733.jar,4,false
+org.reactivestreams.reactive-streams,1.0.3,plugins/org.reactivestreams.reactive-streams_1.0.3.jar,4,false
 org.sat4j.core,2.3.6.v20201214,plugins/org.sat4j.core_2.3.6.v20201214.jar,4,false
 org.sat4j.pb,2.3.6.v20201214,plugins/org.sat4j.pb_2.3.6.v20201214.jar,4,false
 org.slf4j.api,1.7.30.v20200204-2150,plugins/org.slf4j.api_1.7.30.v20200204-2150.jar,4,false
+org.springframework.tooling.cloudfoundry.manifest.ls,1.24.0.202012131915,plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/,4,false
+org.springframework.tooling.jdt.ls.commons,4.9.0.202012131915,plugins/org.springframework.tooling.jdt.ls.commons_4.9.0.202012131915.jar,4,false
+org.springframework.tooling.ls.eclipse.commons,4.0.0.201806290921,plugins/org.springframework.tooling.ls.eclipse.commons_4.0.0.201806290921.jar,4,false
+org.springsource.ide.eclipse.commons.livexp,4.9.0.202012131915,plugins/org.springsource.ide.eclipse.commons.livexp_4.9.0.202012131915.jar,4,false
 org.tukaani.xz,1.9.0,plugins/org.tukaani.xz_1.9.0.jar,4,false
 org.uddi4j,2.0.5.v200805270300,plugins/org.uddi4j_2.0.5.v200805270300.jar,4,false
 org.w3c.css.sac,1.3.1.v200903091627,plugins/org.w3c.css.sac_1.3.1.v200903091627.jar,4,false

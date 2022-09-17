@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config date="1662666964661" transient="false">
+<config date="1663389926466" transient="false">
 	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
 		<feature id="org.eclipse.datatools.modelbase.feature" version="1.14.102.201911250848" url="features/org.eclipse.datatools.modelbase.feature_1.14.102.201911250848/" plugin-identifier="org.eclipse.datatools.modelbase.sql">
 		</feature>
@@ -248,6 +248,8 @@
 		<feature id="org.eclipse.jst.enterprise_userdoc.feature" version="3.23.0.v202107101916" url="features/org.eclipse.jst.enterprise_userdoc.feature_3.23.0.v202107101916/">
 		</feature>
 		<feature id="org.eclipse.wst.common.fproj" version="3.7.3.v202111212041" url="features/org.eclipse.wst.common.fproj_3.7.3.v202111212041/" plugin-identifier="org.eclipse.wst.common.project.facet.core">
+		</feature>
+		<feature id="org.springframework.tooling.cloudfoundry.manifest.ls.feature" version="4.9.0.202012131915" url="features/org.springframework.tooling.cloudfoundry.manifest.ls.feature_4.9.0.202012131915/">
 		</feature>
 		<feature id="org.eclipse.datatools.enablement.sdk.feature" version="1.14.102.201911250848" url="features/org.eclipse.datatools.enablement.sdk.feature_1.14.102.201911250848/" plugin-identifier="org.eclipse.datatools.enablement.finfo">
 		</feature>

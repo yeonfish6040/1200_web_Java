@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b66f3c1-3b02-4fe3-910b-4f4d455e6f61" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/artifacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/artifacts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.artifact.repository.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.artifact.repository.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.metadata.repository.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.metadata.repository.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.engine.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.engine.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.ui.sdk.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.ui.sdk.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/day_003/메모.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/day_003/메모.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +160,7 @@
       <workItem from="1663387320043" duration="70000" />
       <workItem from="1663387403100" duration="132000" />
       <workItem from="1663387547993" duration="449000" />
-      <workItem from="1663388214478" duration="1261000" />
+      <workItem from="1663388214478" duration="1578000" />
     </task>
     <servers />
   </component>
