@@ -1,12 +1,663 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9b66f3c1-3b02-4fe3-910b-4f4d455e6f61" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web_ear_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/artifacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/artifacts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.contributions.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.contributors.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.extraData.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.mainData.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.manager/.fileTable.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.manager/.fileTable.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.manager/.tmp3.instance" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.namespaces.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.orphans.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.core.runtime/.table.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.epp.mpc.ui/MarketplaceInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.epp.mpc.ui/MarketplaceInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.equinox.app/.manager/.tmp6.instance" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/.manager/.fileTable.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/.manager/.fileTable.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/370/data/-856801270/artifacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/370/data/-856801270/artifacts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/378/data/cache.timestamps" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/378/data/cache.timestamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/378/data/listener_1925729951/artifacts.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/378/data/listener_1925729951/artifacts.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/390/data/-147763125/content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/390/data/-147763125/content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/390/data/-1815330000/content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/390/data/-1815330000/content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/390/data/52069975/content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/390/data/52069975/content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/META-INF/ECLIPSE_.RSA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/META-INF/ECLIPSE_.SF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.core.ui/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.core.ui/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/OSGI-INF/component.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/OSGI-INF/org.eclipse.m2e.core.ui.internal.archetype.ArchetypeGenerator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/OSGI-INF/org.eclipse.m2e.core.ui.internal.archetype.ArchetypePlugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/help/LifecycleMappingPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/helpContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/add_index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/add_index@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/clear@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/collapseall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/collapseall@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/debug@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/dirty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/dirty@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/error_st_obj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/error_st_obj@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/expandall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/expandall@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/import_jar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/import_jar@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/import_m2_project.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/import_m2_project@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/import_project.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/import_project@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/jar_obj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/jar_obj@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/jar_src_version.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/jar_src_version@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/jar_version.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/jar_version@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/lock_ovr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/lock_ovr@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/m2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/m2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/m2eclipse48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/main_tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/main_tab@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/maven_index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/maven_index@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/maven_indexes.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/maven_indexes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/maven_indexes@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/mlabel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/mlabel@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/new_m2_pom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/new_m2_pom@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/new_m2_project.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/new_m2_project@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/new_m2_project_wizard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/new_m2_project_wizard@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/passed@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/pom_obj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/pom_obj@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/project_obj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/project_obj@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/rebuild_index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/rebuild_index@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/refresh@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/stderr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/stderr@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/stdout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/stdout@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/suspend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/suspend@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/update_dependencies.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/update_dependencies@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/update_index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/icons/update_index@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/intro/css/overview.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/intro/css/whatsnew.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/intro/overview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/intro/whatsnew.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/m2eclipse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/IMavenDiscovery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/M2EUIPluginActivator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/MavenImages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/MavenVersionDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/Messages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/UpdateMavenProjectJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/WorkingSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/AddDependencyAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/AddPluginAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/AssignWorkingSetAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/ChangeNatureAction$UpdateJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/ChangeNatureAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/DisableNatureAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/EnableNatureAction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/EnableNatureAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/MavenActionSupport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/MavenConsoleRemoveAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/MavenDebugOutputAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/MavenProjectActionSupport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/MavenPropertyTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/ModuleProjectWizardAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/OpenMavenConsoleAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/OpenPomAction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/OpenPomAction$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/OpenPomAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/SelectionUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/StaticContentStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/StaticMavenStorageEditorInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/UpdateMavenProjectAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/actions/UpdateMavenProjectCommandHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeCatalogFactory$DefaultLocalCatalogFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeCatalogFactory$InternalCatalogFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeCatalogFactory$LocalCatalogFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeCatalogFactory$RemoteCatalogFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeCatalogFactory$RemoteCatalogFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeCatalogFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeCatalogsWriter$ArchetypeCatalogsContentHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeCatalogsWriter$XMLArchetypeCatalogsWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeCatalogsWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypePlugin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ArchetypePlugin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/ExtensionReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/archetype/MavenArchetype.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/MavenProjectLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/NestedProjectsComposite$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/NestedProjectsComposite$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/NestedProjectsComposite$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/NestedProjectsComposite$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/NestedProjectsComposite$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/NestedProjectsComposite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/PomHierarchyTreeWrapper$DepLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/PomHierarchyTreeWrapper$PomHeirarchyContentProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/PomHierarchyTreeWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/TextComboBoxCellEditor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/TextComboBoxCellEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/WorkingSetGroup$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/WorkingSetGroup$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/components/WorkingSetGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/ConsoleDocument$ConsoleLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/ConsoleDocument.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/IMavenConsoleListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/MavenConsole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/MavenConsoleFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/MavenConsoleImpl$MavenConsoleLifecycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/MavenConsoleImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/MavenConsolePageParticipant$ShowOnErrorAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/MavenConsolePageParticipant$ShowOnOutputAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/MavenConsolePageParticipant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/console/MavenShowConsoleAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/AbstractMavenDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/AssignWorkingSetDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/AssignWorkingSetDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/EditDependencyDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/InputHistory$CComboWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/InputHistory$ComboWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/InputHistory$ControlWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/InputHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/MavenMessageDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/MavenPropertyDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/MavenRepositorySearchDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/dialogs/UpdateMavenProjectsDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/AddDependencyOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/AddExclusionOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/ChangeCreator$LineComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/ChangeCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/LifecycleMappingOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/PomEdits$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/PomEdits$CompoundOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/PomEdits$Matcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/PomEdits$Operation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/PomEdits$OperationTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/PomEdits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/PomHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/editing/RemoveDependencyOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/lifecyclemapping/AggregateMappingLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/lifecyclemapping/ILifecycleMappingLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/markers/EditorAwareMavenProblemResolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/markers/MarkerLocationService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/markers/MarkerLocationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/markers/MarkerResolutionGenerator$RefreshResolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/markers/MarkerResolutionGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/markers/MavenProblemResolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/LifecycleMappingPreferencePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/LifecycleMappingPropertyPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/LifecycleMappingsViewer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/LifecycleMappingsViewer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/LifecycleMappingsViewer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/LifecycleMappingsViewer$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/LifecycleMappingsViewer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/LocalArchetypeCatalogDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/MavenArchetypesPreferencePage$CatalogsLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/MavenArchetypesPreferencePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/MavenPreferencePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/MavenProjectPreferencePage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/MavenProjectPreferencePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/MavenSettingsPreferencePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/RemoteArchetypeCatalogDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/UserInterfacePreferencePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/WarningsPreferencePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/launch/MavenInstallationWizard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/launch/MavenInstallationWizardPage$TreeContentProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/launch/MavenInstallationWizardPage$TreeLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/launch/MavenInstallationWizardPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/launch/MavenInstallationsPreferencePage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/launch/MavenInstallationsPreferencePage$RuntimesLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/preferences/launch/MavenInstallationsPreferencePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/project/MavenProjectConfigurator$CumulativeMappingDiscoveryJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/project/MavenProjectConfigurator$UpdateMavenConfigurationJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/project/MavenProjectConfigurator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/project/MavenUpdateConfigurationChangeListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/project/OutOfDateConfigurationDeltaVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/ArtifactInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/CComboContentAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/ControlDecoration$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/ControlDecoration$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/ControlDecoration$Hover$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/ControlDecoration$Hover.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/ControlDecoration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/MenuDetectEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/MenuDetectListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/Packaging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/SearchEngine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/search/util/SearchException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ArchetypeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/M2EErrorDialog$ErrorTableContentProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/M2EErrorDialog$ErrorTableLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/M2EErrorDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/M2EUIUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ParentGatherer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ParentHierarchyEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ProposalUtil$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ProposalUtil$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ProposalUtil$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ProposalUtil$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ProposalUtil$Searcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ProposalUtil$TextProposal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/ProposalUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/Util$FileStoreEditorInputStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/util/XmlUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/MavenLifecycleMappingsView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/MavenLifecycleMappingsView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/MavenRepositoryView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/MavenRepositoryView$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/MavenRepositoryView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/MavenRepositoryView$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/MavenRepositoryView$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/MavenRepositoryView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/RepositoryViewContentProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/RepositoryViewLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/BuildDebugView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/BuildDebugView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/BuildDebugView$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/BuildDebugView$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/BuildDebugView$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/BuildDebugView$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/BuildDebugView$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/BuildDebugView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/CollectionNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/ContainerNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/MojoExecutionNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/ProjectNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/build/ResourceNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/AbstractRepositoriesNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/CustomRepositoriesNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/GlobalRepositoriesNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/IArtifactNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/IMavenRepositoryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/LocalRepositoryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/LocalRepositoryRootNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/ProjectRepositoriesNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/RemoteRepositoryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/RepositoryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/views/nodes/WorkspaceRepositoryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/AbstractCreateMavenProjectJob$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/AbstractCreateMavenProjectJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/AbstractCreateMavenProjectsOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/AbstractMavenProjectWizard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/AbstractMavenWizardPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/CustomArchetypeDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/IMavenDiscoveryUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/ImportMavenProjectsJob$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/ImportMavenProjectsJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/LifecycleMappingDiscoveryHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/LifecycleMappingPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/LifecycleMappingPage$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/LifecycleMappingPage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/LifecycleMappingPage$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/LifecycleMappingPage$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/LifecycleMappingPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MappingDiscoveryJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenArtifactComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenDependenciesWizardPage$ArtifactLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenDependenciesWizardPage$DependencySorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenDependenciesWizardPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenDiscoveryProposalWizard$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenDiscoveryProposalWizard$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenDiscoveryProposalWizard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenImportWizard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenImportWizardPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenImportWizardPage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenImportWizardPage$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenImportWizardPage$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenImportWizardPage$ProjectLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenImportWizardPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenInstallFileArtifactWizardPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenInstallFileWizard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenLocationComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenModuleWizard$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenModuleWizard$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenModuleWizard$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenModuleWizard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenModuleWizardParentPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenParentComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenPomSelectionComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenPomSelectionComponent$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenPomSelectionComponent$SearchJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenPomSelectionComponent$SearchResultContentProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenPomSelectionComponent$SearchResultLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenPomSelectionComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenPomWizard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenPomWizardPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectSelectionDialog$MavenContainerContentProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectSelectionDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizard$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizard$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizard$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizard$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypePage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypePage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypePage$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypePage$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypePage$ArchetypeLabelProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypePage$QuickViewerFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypePage$RetrievingArchetypesJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypePage$VersionsFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypeParametersPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypeParametersPage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypeParametersPage$RequiredPropertiesLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArchetypeParametersPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArtifactPage$ProjectFolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardArtifactPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWizardLocationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/MavenProjectWorkspaceAssigner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/ResolverConfigurationComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/ResolverConfigurationComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/org/eclipse/m2e/core/ui/internal/wizards/WidthGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/plugin.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/598/0/.cp/schema/discoveryLaunch.exsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.osgi/framework.info.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.update/platform.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/configuration/org.eclipse.update/platform.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.eclipse.m2e.feature_2.0.4.20220904-1703/META-INF/ECLIPSE_.RSA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.eclipse.m2e.feature_2.0.4.20220904-1703/META-INF/ECLIPSE_.SF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.eclipse.m2e.feature_2.0.4.20220904-1703/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.eclipse.m2e.feature_2.0.4.20220904-1703/epl-2.0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.eclipse.m2e.feature_2.0.4.20220904-1703/feature.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.eclipse.m2e.feature_2.0.4.20220904-1703/feature.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.eclipse.m2e.feature_2.0.4.20220904-1703/license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.springframework.tooling.cloudfoundry.manifest.ls.feature_4.9.0.202012131915/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.springframework.tooling.cloudfoundry.manifest.ls.feature_4.9.0.202012131915/META-INF/PIVOTAL.RSA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.springframework.tooling.cloudfoundry.manifest.ls.feature_4.9.0.202012131915/META-INF/PIVOTAL.SF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.springframework.tooling.cloudfoundry.manifest.ls.feature_4.9.0.202012131915/feature.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.springframework.tooling.cloudfoundry.manifest.ls.feature_4.9.0.202012131915/feature.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.springframework.tooling.cloudfoundry.manifest.ls.feature_4.9.0.202012131915/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/features/org.springframework.tooling.cloudfoundry.manifest.ls.feature_4.9.0.202012131915/p2.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.core/cache/artifacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.core/cache/artifacts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.artifact.repository.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.artifact.repository.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.engine.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.engine.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.metadata.repository.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.metadata.repository.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.ui.sdk.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Eclipse/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.jee.profile/.data/.settings/org.eclipse.equinox.p2.ui.sdk.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/day_003/메모.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/day_003/메모.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.apache.commons.commons-io_2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.apache.commons.lang3_3.1.0.v201403281430.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.eclipse.m2e.apt.core_2.0.0.20220706-1958.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.eclipse.m2e.apt.ui_2.0.0.20220703-1731.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.eclipse.m2e.core.ui_2.0.0.20220726-0935.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.eclipse.m2e.core_2.0.3.20220904-1703.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.eclipse.m2e.editor_2.0.1.20220809-1501.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.eclipse.m2e.launching_2.0.1.20220828-2046.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.eclipse.tm4e.languageconfiguration_0.5.0.202206241118.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.eclipse.tm4e.registry_0.6.0.202206241118.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/META-INF/PIVOTAL.RSA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/META-INF/PIVOTAL.SF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/icons/cloud_obj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/org/springframework/tooling/cloudfoundry/manifest/ls/CloudFoundryManifestLanguageServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/org/springframework/tooling/cloudfoundry/manifest/ls/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/buildpack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/buildpack.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/buildpacks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/buildpacks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/command.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/command.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/disk_quota.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/disk_quota.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/docker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/domain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/domain.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/domains.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/domains.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/env.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/env.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/health-check-http-endpoint.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/health-check-type.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/host.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/host.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/hosts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/hosts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/inherit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/inherit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/instances.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/instances.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/memory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/memory.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/name.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/name.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/no-hostname.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/no-hostname.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/no-route.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/no-route.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/path.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/path.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/random-route.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/routes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/routes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/services.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/stack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/stack.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/timeout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/description-by-prop-name/timeout.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/AbstractCFHintsProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/CFServicesValueParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/CfJson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/DefaultCloudfoundryConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYamlCFBuildpacksProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYamlCFDomainsProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYamlCFServicesProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYamlLanguageServerBootApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYamlLanguageServerInitializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYamlLanguageServerInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYamlSchemaProblemsTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYamlStacksProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYmlHintProviders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYmlSchema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYmlValueParsers$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYmlValueParsers$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYmlValueParsers$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/ManifestYmlValueParsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/RouteContentAssistant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classes/org/springframework/ide/vscode/manifest/yaml/RouteValueParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/classpath.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/byte-buddy-1.10.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/cloudfoundry-client-3.8.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/cloudfoundry-client-reactor-3.8.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/cloudfoundry-operations-3.8.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/cloudfoundry-util-3.8.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/commons-cf-1.24.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/commons-compress-1.16.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/commons-lang3-3.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/commons-language-server-1.24.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/commons-lsp-extensions-1.24.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/commons-util-1.24.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/commons-yaml-1.24.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/evo-inflector-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/gson-2.8.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/guava-19.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/jackson-annotations-2.11.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/jackson-core-2.11.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/jackson-databind-2.11.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/jackson-datatype-jdk8-2.11.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/java-semver-0.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/javolution-core-java-6.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/jcl-over-slf4j-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/jjwt-0.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/jsoup-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/jul-to-slf4j-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/language-server-starter-1.24.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/log4j-api-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/log4j-to-slf4j-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-buffer-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-codec-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-codec-http-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-codec-socks-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-common-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-handler-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-handler-proxy-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-resolver-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-transport-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-transport-native-epoll-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/netty-transport-native-unix-common-4.1.54.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/objenesis-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/okio-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/org.eclipse.lsp4j-0.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/org.eclipse.lsp4j.generator-0.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/org.eclipse.lsp4j.jsonrpc-0.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/org.eclipse.xtend.lib-2.19.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/org.eclipse.xtend.lib.macro-2.19.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/org.eclipse.xtext.xbase.lib-2.19.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/reactive-streams-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/reactor-core-3.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/reactor-netty-0.7.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/remark-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/snakeyaml-1.26.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-aop-5.2.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-beans-5.2.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-boot-2.3.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-boot-autoconfigure-2.3.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-boot-starter-2.3.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-boot-starter-logging-2.3.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-context-5.2.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-core-5.2.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-expression-5.2.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-jcl-5.2.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/spring-web-5.2.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/BOOT-INF/lib/wire-runtime-2.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/maven/org.springframework.ide.vscode/manifest-yaml-language-server/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/maven/org.springframework.ide.vscode/manifest-yaml-language-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/apache license 2.0 - license-2.0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/bsd license 3 - bsd-3-clause.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/cc0 - 1.0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/eclipse public license - v 1.0 - epl-v10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/eclipse public license v2.0 - epl-v20.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/edl 1.0 - edl-v10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/epl 2.0 - epl-2.0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/gnu lesser general public license - lgpl-2.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/gpl2 w_ cpe - license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/the apache software license, version 2.0 - license-2.0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/the mit license - license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/META-INF/third-party-open-source-licenses/the mit license - mit-license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/ClassPathIndexFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/ExecutableArchiveLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/JarLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/LaunchedURLClassLoader$DefinePackageCallType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/LaunchedURLClassLoader$UseFastConnectionExceptionsEnumeration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/LaunchedURLClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/Launcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/MainMethodRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/PropertiesLauncher$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/PropertiesLauncher$ArchiveEntryFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/PropertiesLauncher$ClassPathArchives.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/PropertiesLauncher$PrefixMatchingArchiveFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/PropertiesLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/WarLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/Archive$Entry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/Archive$EntryFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/Archive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/ExplodedArchive$AbstractIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/ExplodedArchive$ArchiveIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/ExplodedArchive$EntryIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/ExplodedArchive$FileEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/ExplodedArchive$SimpleJarFileArchive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/ExplodedArchive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/JarFileArchive$AbstractIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/JarFileArchive$EntryIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/JarFileArchive$JarFileEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/JarFileArchive$NestedArchiveIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/archive/JarFileArchive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/data/RandomAccessData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/data/RandomAccessDataFile$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/data/RandomAccessDataFile$DataInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/data/RandomAccessDataFile$FileAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/data/RandomAccessDataFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/AbstractJarFile$JarFileType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/AbstractJarFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/AsciiBytes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/Bytes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/CentralDirectoryEndRecord$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/CentralDirectoryEndRecord$Zip64End.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/CentralDirectoryEndRecord$Zip64Locator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/CentralDirectoryEndRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/CentralDirectoryFileHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/CentralDirectoryParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/CentralDirectoryVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/FileHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/Handler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarEntryCertification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarEntryFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarFile$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarFile$JarEntryEnumeration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarFileEntries$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarFileEntries$EntryIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarFileEntries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarFileWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarURLConnection$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarURLConnection$JarEntryName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/JarURLConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/StringSequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jar/ZipInflaterInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jarmode/JarMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jarmode/JarModeLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/jarmode/TestJarMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/servers/manifest-yaml-language-server/org/springframework/boot/loader/util/SystemPropertyUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.cloudfoundry.manifest.ls_1.24.0.202012131915/syntaxes/YAML.tmLanguage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.jdt.ls.commons_4.9.0.202012131915.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springframework.tooling.ls.eclipse.commons_4.0.0.201806290921.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eclipse/eclipse/plugins/org.springsource.ide.eclipse.commons.livexp_4.9.0.202012131915.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/day_003/메모.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/day_003_spring/메모.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/day_003_spring/메모.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +674,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/day_003_spring/메모.txt" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2EsbUSbjTZCUJhronEjQ20V1R52" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -36,13 +693,15 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "D:/1200_web_Java/jdk-18.0.2.1.jdk",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "D:/1200_web_Java/Java_web",
+    "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.applicationServers"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "spring.configuration.checksum": "2567a5ec9705eb7ac2c984033e06189d"
   }
 }]]></component>
   <component name="RunDashboard">
@@ -161,6 +820,9 @@
       <workItem from="1663387403100" duration="132000" />
       <workItem from="1663387547993" duration="449000" />
       <workItem from="1663388214478" duration="1578000" />
+      <workItem from="1663390323437" duration="2528000" />
+      <workItem from="1663395535113" duration="1233000" />
+      <workItem from="1663397567034" duration="325000" />
     </task>
     <servers />
   </component>

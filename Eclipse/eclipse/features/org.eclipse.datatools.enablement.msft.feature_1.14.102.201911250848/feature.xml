@@ -34,14 +34,14 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.msft.sqlserver"
-         download-size="84"
+         download-size="83"
          install-size="206"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.msft.sqlserver.ui"
-         download-size="44"
+         download-size="43"
          install-size="86"
          version="1.2.101.201811012051"
          unpack="false"/>

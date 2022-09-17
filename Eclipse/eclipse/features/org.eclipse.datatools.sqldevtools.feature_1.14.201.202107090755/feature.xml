@@ -31,28 +31,28 @@
 
    <plugin
          id="org.eclipse.datatools.sqltools.common.ui"
-         download-size="232"
+         download-size="228"
          install-size="438"
          version="1.2.200.202008192017"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.debugger.core"
-         download-size="55"
+         download-size="54"
          install-size="107"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.editor.core"
-         download-size="192"
+         download-size="189"
          install-size="392"
          version="1.2.101.202008192017"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.plan"
-         download-size="132"
+         download-size="130"
          install-size="257"
          version="1.2.101.201811012051"
          unpack="false"/>
@@ -66,63 +66,63 @@
 
    <plugin
          id="org.eclipse.datatools.sqltools.sql"
-         download-size="92"
+         download-size="91"
          install-size="158"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.sqleditor"
-         download-size="471"
+         download-size="463"
          install-size="991"
          version="1.2.201.202009292210"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.sqlscrapbook"
-         download-size="142"
+         download-size="139"
          install-size="297"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.help"
-         download-size="18"
+         download-size="17"
          install-size="31"
          version="1.7.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.db.generic"
-         download-size="139"
+         download-size="138"
          install-size="348"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.debugger.core.ui"
-         download-size="82"
+         download-size="81"
          install-size="169"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.editor.core.ui"
-         download-size="47"
+         download-size="46"
          install-size="86"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.result.ui"
-         download-size="376"
+         download-size="369"
          install-size="798"
          version="1.3.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.routineeditor.ui"
-         download-size="167"
+         download-size="164"
          install-size="361"
          version="1.2.101.202008192017"
          unpack="false"/>

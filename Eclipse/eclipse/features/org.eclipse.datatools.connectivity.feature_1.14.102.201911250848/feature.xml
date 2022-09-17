@@ -25,49 +25,49 @@
 
    <plugin
          id="org.eclipse.datatools.connectivity.sqm.core.ui"
-         download-size="343"
+         download-size="340"
          install-size="715"
          version="1.4.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.connectivity.sqm.core"
-         download-size="350"
+         download-size="344"
          install-size="808"
          version="1.4.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.connectivity.sqm.server.ui"
-         download-size="123"
+         download-size="122"
          install-size="250"
          version="1.3.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.connectivity.ui.dse"
-         download-size="82"
+         download-size="81"
          install-size="178"
          version="1.3.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.connectivity.ui"
-         download-size="573"
+         download-size="563"
          install-size="1200"
          version="1.4.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.connectivity"
-         download-size="276"
+         download-size="270"
          install-size="604"
          version="1.14.102.201911250848"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.help"
-         download-size="18"
+         download-size="17"
          install-size="31"
          version="1.7.101.201811012051"
          unpack="false"/>

@@ -32,7 +32,7 @@
 
    <plugin
          id="org.eclipse.datatools.sqltools.parsers.sql.query"
-         download-size="311"
+         download-size="309"
          install-size="749"
          version="1.4.101.201811012051"
          unpack="false"/>
@@ -46,7 +46,7 @@
 
    <plugin
          id="org.eclipse.datatools.sqltools.parsers.sql"
-         download-size="54"
+         download-size="53"
          install-size="97"
          version="1.2.101.201811012051"
          unpack="false"/>

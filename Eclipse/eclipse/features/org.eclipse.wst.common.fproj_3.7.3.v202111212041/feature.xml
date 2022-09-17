@@ -20,15 +20,15 @@
 
    <plugin
          id="org.eclipse.wst.common.project.facet.core"
-         download-size="369"
-         install-size="830"
+         download-size="362"
+         install-size="828"
          version="1.4.402.v202111212041"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.wst.common.project.facet.ui"
-         download-size="292"
-         install-size="580"
+         download-size="286"
+         install-size="578"
          version="1.4.602.v202007142017"
          unpack="false"/>
 

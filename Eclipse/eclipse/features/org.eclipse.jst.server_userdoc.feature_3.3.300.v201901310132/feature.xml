@@ -32,8 +32,8 @@
 
    <plugin
          id="org.eclipse.jst.server.ui.doc.user"
-         download-size="76"
-         install-size="109"
+         download-size="74"
+         install-size="107"
          version="1.0.600.v201901310132"
          unpack="false"/>
 

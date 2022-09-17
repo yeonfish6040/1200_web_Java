@@ -26,21 +26,21 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.oda.ws.ui"
-         download-size="110"
+         download-size="108"
          install-size="217"
          version="1.4.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.oda.xml.ui"
-         download-size="218"
+         download-size="214"
          install-size="425"
          version="1.4.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.connectivity.oda.flatfile.ui"
-         download-size="104"
+         download-size="102"
          install-size="201"
          version="3.3.101.201811012051"
          unpack="false"/>

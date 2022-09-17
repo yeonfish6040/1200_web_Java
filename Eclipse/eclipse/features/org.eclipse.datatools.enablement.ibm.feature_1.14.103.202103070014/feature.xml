@@ -27,14 +27,14 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.ibm"
-         download-size="295"
+         download-size="290"
          install-size="718"
          version="1.2.102.202103070014"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.ibm.db2"
-         download-size="289"
+         download-size="283"
          install-size="684"
          version="1.2.102.202103070014"
          unpack="false"/>
@@ -55,7 +55,7 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.ibm.db2.iseries.ui"
-         download-size="32"
+         download-size="31"
          install-size="56"
          version="1.2.101.201811012051"
          unpack="false"/>
@@ -69,14 +69,14 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.ibm.db2.luw"
-         download-size="840"
+         download-size="819"
          install-size="2072"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.ibm.db2.luw.ui"
-         download-size="39"
+         download-size="38"
          install-size="71"
          version="1.2.101.201811012051"
          unpack="false"/>
@@ -90,14 +90,14 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.ibm.db2.zseries"
-         download-size="19"
+         download-size="18"
          install-size="32"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.ibm.db2.zseries.ui"
-         download-size="26"
+         download-size="25"
          install-size="43"
          version="1.2.101.201811012051"
          unpack="false"/>
@@ -125,7 +125,7 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.ibm.ui"
-         download-size="21"
+         download-size="20"
          install-size="33"
          version="1.2.101.201811012051"
          unpack="false"/>

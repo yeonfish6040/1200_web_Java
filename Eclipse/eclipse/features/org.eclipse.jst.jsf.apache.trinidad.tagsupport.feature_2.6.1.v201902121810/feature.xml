@@ -45,8 +45,8 @@
 
    <plugin
          id="org.eclipse.jst.jsf.apache.trinidad.tagsupport"
-         download-size="159"
-         install-size="662"
+         download-size="155"
+         install-size="660"
          version="1.4.1.v201902121810"
          unpack="false"/>
 

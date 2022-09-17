@@ -21,14 +21,14 @@
 
    <plugin
          id="org.eclipse.datatools.connectivity.oda.consumer"
-         download-size="123"
+         download-size="121"
          install-size="285"
          version="3.4.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.connectivity.oda.design"
-         download-size="350"
+         download-size="344"
          install-size="1036"
          version="3.5.101.201811012051"
          unpack="false"/>
@@ -42,14 +42,14 @@
 
    <plugin
          id="org.eclipse.datatools.connectivity.oda"
-         download-size="255"
+         download-size="250"
          install-size="601"
          version="3.6.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.connectivity"
-         download-size="276"
+         download-size="270"
          install-size="604"
          version="1.14.102.201911250848"
          unpack="false"/>

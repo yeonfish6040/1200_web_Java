@@ -39,8 +39,8 @@ http://www.eclipse.org/legal/epl-v20.html
 
    <plugin
          id="org.eclipse.emf.codegen.ui"
-         download-size="298"
-         install-size="664"
+         download-size="294"
+         install-size="631"
          version="2.23.0.v20210412-0833"
          unpack="false"/>
 

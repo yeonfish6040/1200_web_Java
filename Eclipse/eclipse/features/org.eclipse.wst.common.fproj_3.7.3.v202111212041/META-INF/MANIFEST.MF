@@ -6,7 +6,7 @@ Name: epl-v10.html
 SHA-256-Digest: mpbQ2vmKpvtKpTDTmcdCxmEhsL2uSh9/+iLSE14d9/0=
 
 Name: feature.xml
-SHA-256-Digest: D23AHxLOnyjXmDgLLMSzhbRSizH2JzgbnNieEI6FcBY=
+SHA-256-Digest: uGUZ03XMxqxoby6hCh4+7gVYBNjI8vqp9vIlLYrXSTk=
 
 Name: eclipse_update_120.jpg
 SHA-256-Digest: Hz0atd2kr+i4cvgLVlm8vrN9olKs5NgxwdDxTuA9N2k=

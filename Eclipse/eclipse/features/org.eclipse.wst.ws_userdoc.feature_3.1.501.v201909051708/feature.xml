@@ -19,22 +19,22 @@
 
    <plugin
          id="org.eclipse.wst.wsdl.ui.doc.user"
-         download-size="90"
-         install-size="162"
+         download-size="88"
+         install-size="161"
          version="1.0.850.v201903222115"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.wst.wsi.ui.doc.user"
-         download-size="52"
-         install-size="71"
+         download-size="51"
+         install-size="70"
          version="1.0.750.v201903222115"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.wst.command.env.doc.user"
-         download-size="40"
-         install-size="87"
+         download-size="38"
+         install-size="86"
          version="1.5.400.v201903222115"
          unpack="false"/>
 

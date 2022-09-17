@@ -44,22 +44,22 @@ http://www.eclipse.org/legal/epl-v20.html
 
    <plugin
          id="org.eclipse.emf.mapping.ecore.editor"
-         download-size="15"
-         install-size="18"
+         download-size="13"
+         install-size="17"
          version="2.8.0.v20180706-1146"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.emf.mapping.ecore2ecore.editor"
-         download-size="51"
-         install-size="123"
+         download-size="48"
+         install-size="94"
          version="2.10.0.v20181104-0733"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.emf.mapping.ecore2xml.ui"
-         download-size="102"
-         install-size="228"
+         download-size="99"
+         install-size="199"
          version="2.12.0.v20190528-0725"
          unpack="false"/>
 

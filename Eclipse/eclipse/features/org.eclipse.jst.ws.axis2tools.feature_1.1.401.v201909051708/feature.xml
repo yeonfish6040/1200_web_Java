@@ -20,50 +20,50 @@
 
    <plugin
          id="org.eclipse.jst.ws.axis2.core"
-         download-size="72"
-         install-size="187"
+         download-size="66"
+         install-size="128"
          version="1.0.300.v201903050508"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.ws.axis2.ui"
-         download-size="32"
-         install-size="107"
+         download-size="27"
+         install-size="38"
          version="1.0.400.v201903050508"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.ws.axis2.consumption.core"
-         download-size="48"
-         install-size="152"
+         download-size="42"
+         install-size="76"
          version="1.0.200.v201903050508"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.ws.axis2.consumption.ui"
-         download-size="50"
-         install-size="158"
+         download-size="44"
+         install-size="82"
          version="1.0.200.v201903050508"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.ws.axis2.creation.core"
-         download-size="49"
-         install-size="152"
+         download-size="43"
+         install-size="75"
          version="1.0.200.v201903050508"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.ws.axis2.creation.ui"
-         download-size="57"
-         install-size="177"
+         download-size="50"
+         install-size="100"
          version="1.0.200.v201903050508"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.ws.axis2.ui.doc.user"
-         download-size="42"
-         install-size="87"
+         download-size="41"
+         install-size="85"
          version="1.0.200.v201903222115"
          unpack="false"/>
 

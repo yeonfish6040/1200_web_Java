@@ -25,7 +25,7 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.jdt.classpath"
-         download-size="27"
+         download-size="26"
          install-size="40"
          version="1.2.101.201807030125"
          unpack="false"/>

@@ -32,22 +32,22 @@
 
    <plugin
          id="org.eclipse.jst.pagedesigner"
-         download-size="1635"
-         install-size="3305"
+         download-size="1608"
+         install-size="3303"
          version="1.8.5.v202111210733"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.pagedesigner.jsf.ui"
-         download-size="305"
-         install-size="613"
+         download-size="299"
+         install-size="612"
          version="1.5.2.v201902121810"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.pagedesigner.jsp.core"
-         download-size="35"
-         install-size="59"
+         download-size="33"
+         install-size="57"
          version="1.5.102.v201902121810"
          unpack="false"/>
 

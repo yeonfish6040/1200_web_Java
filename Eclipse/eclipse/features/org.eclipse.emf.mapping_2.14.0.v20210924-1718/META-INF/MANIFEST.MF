@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
-Created-By: Maven Archiver 3.5.2
+Created-By: Maven Archiver 3.5.0
 Build-Jdk-Spec: 11
 
 Name: epl-2.0.html
 SHA-256-Digest: koxKavfpz4JYnlYPmP+7at5zhbWf7Iy07zamu5HPcBg=
 
 Name: feature.xml
-SHA-256-Digest: aVuzeyNhZ3bZ3/UhQsrKVySOczM6dOLEG3i+msrNulY=
+SHA-256-Digest: 69bRwaj4qTcDKApRwmkSHi/RYlr2yHuvtlHT8TtkQc0=
 
 Name: feature.properties
 SHA-256-Digest: GmGPcVEVj3AVvnhw3C9xnljIObjw/nM3Argug70y7No=

@@ -36,8 +36,8 @@ http://www.eclipse.org/legal/epl-v20.html
 
    <plugin
          id="org.eclipse.emf.databinding.edit"
-         download-size="54"
-         install-size="126"
+         download-size="52"
+         install-size="120"
          version="1.7.0.v20210113-0340"
          unpack="false"/>
 

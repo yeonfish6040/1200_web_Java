@@ -21,15 +21,15 @@
 
    <plugin
          id="org.eclipse.jst.ws.jaxws.core"
-         download-size="107"
-         install-size="267"
+         download-size="100"
+         install-size="217"
          version="1.0.600.v202104210249"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.ws.jaxws.ui"
-         download-size="219"
-         install-size="504"
+         download-size="210"
+         install-size="453"
          version="1.0.600.v202008101342"
          unpack="false"/>
 
@@ -49,8 +49,8 @@
 
    <plugin
          id="org.eclipse.jst.ws.annotations.core"
-         download-size="64"
-         install-size="179"
+         download-size="59"
+         install-size="139"
          version="1.2.200.v202008101342"
          unpack="false"/>
 
@@ -70,8 +70,8 @@
 
    <plugin
          id="org.eclipse.jst.ws.jaxb.core"
-         download-size="25"
-         install-size="71"
+         download-size="21"
+         install-size="30"
          version="1.0.200.v201902162203"
          unpack="false"/>
 

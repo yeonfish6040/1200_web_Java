@@ -27,42 +27,42 @@
 
    <plugin
          id="org.eclipse.datatools.sqltools.sql"
-         download-size="92"
+         download-size="91"
          install-size="158"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.common.ui"
-         download-size="232"
+         download-size="228"
          install-size="438"
          version="1.2.200.202008192017"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.plan"
-         download-size="132"
+         download-size="130"
          install-size="257"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.editor.core"
-         download-size="192"
+         download-size="189"
          install-size="392"
          version="1.2.101.202008192017"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.sqleditor"
-         download-size="471"
+         download-size="463"
          install-size="991"
          version="1.2.201.202009292210"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.sqltools.ddlgen.ui"
-         download-size="82"
+         download-size="81"
          install-size="155"
          version="1.2.101.201811012051"
          unpack="false"/>
@@ -76,7 +76,7 @@
 
    <plugin
          id="org.eclipse.datatools.sqltools.editor.core.ui"
-         download-size="47"
+         download-size="46"
          install-size="86"
          version="1.2.101.201811012051"
          unpack="false"/>

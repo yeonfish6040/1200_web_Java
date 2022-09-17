@@ -38,8 +38,8 @@ http://www.eclipse.org/legal/epl-v20.html
 
    <plugin
          id="org.eclipse.emf.codegen"
-         download-size="362"
-         install-size="788"
+         download-size="360"
+         install-size="781"
          version="2.22.0.v20210420-0623"
          unpack="false"/>
 

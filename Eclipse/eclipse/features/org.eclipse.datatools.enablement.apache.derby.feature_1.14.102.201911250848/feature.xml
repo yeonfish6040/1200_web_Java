@@ -35,14 +35,14 @@
 
    <plugin
          id="org.eclipse.datatools.connectivity.apache.derby.ui"
-         download-size="59"
+         download-size="58"
          install-size="111"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.connectivity.apache.derby"
-         download-size="83"
+         download-size="82"
          install-size="191"
          version="1.2.101.201811012051"
          unpack="false"/>
@@ -56,7 +56,7 @@
 
    <plugin
          id="org.eclipse.datatools.sqltools.db.derby"
-         download-size="155"
+         download-size="153"
          install-size="383"
          version="1.2.101.201811012051"
          unpack="false"/>

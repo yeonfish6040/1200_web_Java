@@ -37,22 +37,22 @@
 
    <plugin
          id="org.eclipse.jst.server.ui"
-         download-size="50"
-         install-size="120"
+         download-size="45"
+         install-size="75"
          version="1.1.500.v202103180201"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.server.generic.ui"
-         download-size="87"
-         install-size="212"
+         download-size="82"
+         install-size="164"
          version="1.0.700.v201910252115"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jst.server.ui.infopop"
-         download-size="14"
-         install-size="24"
+         download-size="12"
+         install-size="22"
          version="1.0.500.v201901310132"
          unpack="false"/>
 

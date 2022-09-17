@@ -66,29 +66,29 @@
 
    <plugin
          id="org.eclipse.jpt.jpa.eclipselink.core"
-         download-size="1485"
-         install-size="3812"
+         download-size="1455"
+         install-size="3810"
          version="2.4.101.v201902121834"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jpt.jpa.eclipselink.ui"
-         download-size="1112"
-         install-size="2802"
+         download-size="1097"
+         install-size="2800"
          version="2.4.101.v201902121834"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jpt.jpa.eclipselink.core.ddlgen"
-         download-size="15"
-         install-size="22"
+         download-size="13"
+         install-size="20"
          version="2.2.201.v201902121834"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jpt.jpa.eclipselink.branding"
-         download-size="18"
-         install-size="23"
+         download-size="17"
+         install-size="21"
          version="3.4.1.v201902121834"
          unpack="false"/>
 

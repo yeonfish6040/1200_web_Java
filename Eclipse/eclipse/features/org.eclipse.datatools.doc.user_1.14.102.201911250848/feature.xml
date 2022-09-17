@@ -49,7 +49,7 @@
 
    <plugin
          id="org.eclipse.datatools.help"
-         download-size="18"
+         download-size="17"
          install-size="31"
          version="1.7.101.201811012051"
          unpack="false"/>

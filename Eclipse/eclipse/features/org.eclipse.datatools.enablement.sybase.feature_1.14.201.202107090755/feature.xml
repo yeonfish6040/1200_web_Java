@@ -28,28 +28,28 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.sybase.asa.models"
-         download-size="195"
+         download-size="192"
          install-size="490"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.sybase.ase.models"
-         download-size="233"
+         download-size="229"
          install-size="644"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.sybase.asa"
-         download-size="286"
+         download-size="281"
          install-size="671"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.sybase.ase"
-         download-size="301"
+         download-size="295"
          install-size="721"
          version="1.2.101.201811012051"
          unpack="false"/>
@@ -70,28 +70,28 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.sybase.asa.ui"
-         download-size="84"
+         download-size="82"
          install-size="167"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.sybase.ase.ui"
-         download-size="78"
+         download-size="77"
          install-size="154"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.sybase"
-         download-size="165"
+         download-size="163"
          install-size="338"
          version="1.2.101.201811012051"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.datatools.enablement.sybase.models"
-         download-size="47"
+         download-size="46"
          install-size="102"
          version="1.2.101.201811012051"
          unpack="false"/>
@@ -105,7 +105,7 @@
 
    <plugin
          id="org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples"
-         download-size="645"
+         download-size="635"
          install-size="1436"
          version="2.7.200.202008192017"
          unpack="false"/>

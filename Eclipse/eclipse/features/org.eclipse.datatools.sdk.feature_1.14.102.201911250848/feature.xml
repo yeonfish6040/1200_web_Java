@@ -45,7 +45,7 @@
 
    <plugin
          id="org.eclipse.datatools.connectivity.ui.templates"
-         download-size="76"
+         download-size="75"
          install-size="136"
          version="1.2.101.201811012051"
          unpack="false"/>

@@ -37,8 +37,8 @@ http://www.eclipse.org/legal/epl-v20.html
 
    <plugin
          id="org.eclipse.emf.ecore.editor"
-         download-size="124"
-         install-size="273"
+         download-size="121"
+         install-size="245"
          version="2.17.0.v20190528-0725"
          unpack="false"/>
 
