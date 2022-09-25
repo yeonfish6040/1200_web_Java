@@ -1,0 +1,18 @@
+Spring boot
+    - start.spring.io / spring.io/quickstart
+
+    1) Create new Project > Springboot > 
+
+    Developser Tools
+    - Spring Boot Devtools
+    - Lombok
+    - Spring Configuration Processor
+
+    Web
+    - Spring Web
+    - Spring Web Service
+
+    Template Engine
+    - Thymeleaf
+    SQL
+    - JDBC API
