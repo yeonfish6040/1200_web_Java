@@ -16,3 +16,37 @@ Spring boot
     - Thymeleaf
     SQL
     - JDBC API
+    - MyBatis Framework
+    - Oracle Driver
+    - MariaDB Driver
+
+프로젝트 띄우기
+    - 우측 하단 라이브러리 다운로드 기다리기
+    - src/main/java/com/[project]/ex00/Ex00Application.java 오픈
+    - Run
+    - ERROR Fail to configure a DataSource => @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class}) <- 추가
+    - Project / Properties / Java Editor / Save Actions -> Project specific settings (Enable) | perform (Enable) | import (Enable)
+    - Run
+    - Port 8080 ERROR
+    - resorces / application.properties => server.port = 10000
+    - Run
+    - E N D
+    - http://localhost:10000/
+    - White ERROR - 404
+    - resource / template => touch index.html
+    - http://localhost:10000/
+    - status 0
+
+Dirs
+    - src / main / java         => ServerSide Java File
+    - test / main / java        => Test Java File
+    - src / main / resource     => Properties and view
+    - resource / statis         => css, js
+    - resource / templates      => html
+    - pom.xml                   => manage dependency
+    - application.properties    => server and db setting file
+
+
+Exception 
+    - Error 발생시 /error경로로 요청이 기본적으로 들어온다
+    - Mapping으로 가로채면 원하는 동작을 수행 가능하다
