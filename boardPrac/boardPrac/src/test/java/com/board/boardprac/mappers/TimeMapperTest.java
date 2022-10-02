@@ -1,4 +1,4 @@
-package com.board.boardprac.mapper;
+package com.board.boardprac.mappers;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;

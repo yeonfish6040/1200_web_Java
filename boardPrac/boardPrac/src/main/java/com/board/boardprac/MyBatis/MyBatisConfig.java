@@ -19,7 +19,7 @@ import javax.sql.*;
 @Slf4j
 @Configuration // 설정하는 클래스
 @RequiredArgsConstructor
-@MapperScan("com.board.boardprac.mapper")
+@MapperScan("com.board.boardprac.mappers")
 public class MyBatisConfig {
     // 커넥션 풀 및 Mybatis에 필요한 요소를 메로리에 할당&관리
     private final ApplicationContext applicationContext;

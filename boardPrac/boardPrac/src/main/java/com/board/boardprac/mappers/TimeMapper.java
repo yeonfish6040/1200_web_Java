@@ -1,4 +1,4 @@
-package com.board.boardprac.mapper;
+package com.board.boardprac.mappers;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
