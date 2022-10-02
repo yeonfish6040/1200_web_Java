@@ -38,10 +38,11 @@ public class MyBatisConfig {
     @Bean
     public DataSource dataSource() { return new HikariDataSource(hikariConfig()); } // DataSource 객체에 정보 설정
 
+    /*
     @Bean
     public SqlSessionFactory sqlSessionFactory() throws IOException {
         // 세션 책도리 객체 생성
-        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean(); 
+        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
 
         // 위에서 설정한 datasource 객체를 세션 팩토리 설정에 전달
         sqlSessionFactoryBean.setDataSource(dataSource());
@@ -51,7 +52,7 @@ public class MyBatisConfig {
 
         try {
             SqlSessionFactory factory = sqlSessionFactoryBean.getObject();
-            
+
             // 카멜표기법으로 자동 변경
             factory.getConfiguration().setMapUnderscoreToCamelCase(true);
             return factory;
@@ -60,5 +61,5 @@ public class MyBatisConfig {
         }
         return null;
     }
-
+    */
 }
