@@ -1,6 +1,7 @@
 package com.board.boardprac.MyBatis;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +25,24 @@ public class MybatisConfigTest {
         try (Connection conn = dataSource.getConnection();) {
             log.info("----------------------------------");
             log.info("datasource connection: "+conn);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+            log.info("----------------------------------");
+        } catch (Exception e) {
+            log.error(e.getMessage());
+        }
+    }
+
+    @Test
+    public void testSqlSession() throws SQLException {
+        log.info("----------------------------------");
+        log.info("sql session factory: "+sqlSessionFactory);
+        log.info("----------------------------------");
+        try(SqlSession sqlSession = sqlSessionFactory.openSession(true); Connection conn = sqlSession.getConnection();) {
+            log.info("----------------------------------");
+            log.info("sql session: "+sqlSession);
+            log.info("sql session connection"+conn);
+            log.info("----------------------------------");
+        }catch (Exception e) {
+            log.info(e.getMessage());
         }
     }
 }

@@ -38,28 +38,28 @@ public class MyBatisConfig {
     @Bean
     public DataSource dataSource() { return new HikariDataSource(hikariConfig()); } // DataSource 객체에 정보 설정
 
-    /*
     @Bean
     public SqlSessionFactory sqlSessionFactory() throws IOException {
-        // 세션 책도리 객체 생성
+        // 세션 팩토리 객체 생성
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
 
         // 위에서 설정한 datasource 객체를 세션 팩토리 설정에 전달
         sqlSessionFactoryBean.setDataSource(dataSource());
 
         // SQL 쿼리를 작성할 xml 결로 설정
-        sqlSessionFactoryBean.setMapperLocations(applicationContext.getResource("classpath*:/mappers/*.xml"));
+        sqlSessionFactoryBean.setMapperLocations(applicationContext.getResources("classpath*:/mappers/*.xml"));
 
+        SqlSessionFactory factory;
         try {
-            SqlSessionFactory factory = sqlSessionFactoryBean.getObject();
+            factory = sqlSessionFactoryBean.getObject();
 
             // 카멜표기법으로 자동 변경
             factory.getConfiguration().setMapUnderscoreToCamelCase(true);
             return factory;
         } catch (Exception e) {
             log.info(String.valueOf(e.getStackTrace()));
+            factory = null;
         }
-        return null;
+        return factory;
     }
-    */
 }
