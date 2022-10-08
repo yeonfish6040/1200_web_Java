@@ -17,4 +17,7 @@ public interface BoardMapper {
 	public void insertSelectKey_bno(BoardVO board);
 
 	public BoardVO read(Long bno);
+
+	/** return: affected row count */
+	public int delete(Long bno);
 }

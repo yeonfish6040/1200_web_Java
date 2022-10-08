@@ -40,9 +40,14 @@ public class BoardMapperTest {
 		mapper.insertSelectKey_bno(board);
 	}
 
-	@Test
+//	@Test
 	public void testRead() {
 		String str = mapper.read(1L).toString();
 		log.info(str);
+	}
+
+	@Test
+	public void testDelete() {
+		log.info(String.valueOf(mapper.delete(3L)));
 	}
 }
