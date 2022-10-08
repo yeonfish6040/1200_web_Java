@@ -2,6 +2,7 @@ package com.example.board.mappers;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
 
+import com.example.board.beans.vo.BoardVO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,5 +19,13 @@ public class BoardMapperTest {
 	@Test
 	public void testGetList() {
 		mapper.getList().forEach(board -> log.info(board.toString()));
+	}
+
+	@Test
+	public void testInsert() {
+		BoardVO board = new BoardVO();
+		board.setTitle("새로 작성한 글 제목");
+		board.setContent("새로 작성한 글 내용");
+		board.setWriter("user01");
 	}
 }
