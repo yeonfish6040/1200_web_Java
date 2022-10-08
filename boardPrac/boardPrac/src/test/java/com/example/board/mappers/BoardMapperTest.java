@@ -39,4 +39,9 @@ public class BoardMapperTest {
 		board.setWriter("user02");
 		mapper.insertSelectKey_bno(board);
 	}
+
+	@Test
+	public void testRead() {
+		log.info(mapper.read(1L).toString());
+	}
 }

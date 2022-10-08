@@ -15,4 +15,6 @@ public interface BoardMapper {
 	public void insert(BoardVO board);
 
 	public void insertSelectKey_bno(BoardVO board);
+
+	public BoardVO read(BoardVO board);
 }
