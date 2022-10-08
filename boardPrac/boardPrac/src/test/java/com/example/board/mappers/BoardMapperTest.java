@@ -42,6 +42,7 @@ public class BoardMapperTest {
 
 	@Test
 	public void testRead() {
-		log.info(mapper.read(1L).toString());
+		String str = mapper.read(1L).toString();
+		log.info(str);
 	}
 }
