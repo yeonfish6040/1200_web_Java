@@ -50,24 +50,23 @@ public class BoardMapperTest {
 	}
 
 	@Test
-	public int testUpdate() {
+	public void testUpdate() {
 
 		Long bno = 1L;
 
 		if (mapper.read(bno) == null) {
 			log.info("count: 0");
-			return 0;
+		}else {
+
+			BoardVO board = new BoardVO();
+			//  실행 전 존재하는 글인지 확인
+			board.setBno(bno);
+			board.setTitle("불꽅놀이");
+			board.setContent("재밌겠다");
+			board.setWriter("이연준");
+
+			int count = mapper.update(board);
+			log.info("count: " + count);
 		}
-
-		BoardVO board = new BoardVO();
-		//  실행 전 존재하는 글인지 확인
-		board.setBno(bno);
-		board.setTitle("불꽅놀이");
-		board.setContent("재밌겠다");
-		board.setWriter("이연준");
-
-		int count = mapper.update(board);
-		log.info("count: "+count);
-		return count;
 	}
 }
