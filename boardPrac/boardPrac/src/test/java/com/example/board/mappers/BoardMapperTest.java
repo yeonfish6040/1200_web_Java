@@ -46,8 +46,30 @@ public class BoardMapperTest {
 		log.info(str);
 	}
 
-	@Test
+//	@Test
 	public void testDelete() {
 		log.info(String.valueOf(mapper.delete(3L)));
+	}
+
+	@Test
+	public int testUpdate() {
+
+		Long bno = 1L;
+
+		if (mapper.read(bno) == null) {
+			log.info("count: 0");
+			return 0;
+		}
+
+		BoardVO board = new BoardVO();
+		//  실행 전 존재하는 글인지 확인
+		board.setBno(bno);
+		board.setTitle("불꽅놀이");
+		board.setContent("재밌겠다");
+		board.setWriter("이연준");
+
+		int count = mapper.update(board);
+		log.info("count: "+count);
+		return count;
 	}
 }

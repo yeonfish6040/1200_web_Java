@@ -20,4 +20,6 @@ public interface BoardMapper {
 
 	/** return: affected row count */
 	public int delete(Long bno);
+
+	public int update(BoardVO board);
 }
