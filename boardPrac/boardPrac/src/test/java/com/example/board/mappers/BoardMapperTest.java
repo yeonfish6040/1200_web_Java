@@ -16,12 +16,12 @@ public class BoardMapperTest {
 	@Autowired
 	private BoardMapper mapper;
 	
-	@Test
+//	@Test
 	public void testGetList() {
 		mapper.getList().forEach(board -> log.info(board.toString()));
 	}
 
-	@Test
+//	@Test
 	public void testInsert() {
 		BoardVO board = new BoardVO();
 		board.setTitle("새로 작성한 글 제목");
@@ -31,7 +31,7 @@ public class BoardMapperTest {
 		mapper.insert(board);
 	}
 
-	@Test
+//	@Test
 	public void testInsertSelectKey_bno() {
 		BoardVO board = new BoardVO();
 		board.setTitle("새로 작성한 글 제목");
