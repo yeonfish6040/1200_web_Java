@@ -27,5 +27,16 @@ public class BoardMapperTest {
 		board.setTitle("새로 작성한 글 제목");
 		board.setContent("새로 작성한 글 내용");
 		board.setWriter("user01");
+
+		mapper.insert(board);
+	}
+
+	@Test
+	public void testInsertSelectKey_bno() {
+		BoardVO board = new BoardVO();
+		board.setTitle("새로 작성한 글 제목");
+		board.setContent("새로 작성한 글 내용");
+		board.setWriter("user02");
+		mapper.insertSelectKey_bno(board);
 	}
 }

@@ -10,5 +10,9 @@ import com.example.board.beans.vo.BoardVO;
 public interface BoardMapper {
 	// 게시글 목록
 	public List<BoardVO> getList();
-	public void insert(BoardVO board)
+
+
+	public void insert(BoardVO board);
+
+	public void insertSelectKey_bno(BoardVO board);
 }
