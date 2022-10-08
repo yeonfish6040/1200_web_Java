@@ -1,4 +1,4 @@
-package com.example.board.beans.vo;
+package com.board.boardprac.beans.vo;
 
 import org.springframework.stereotype.Component;
 

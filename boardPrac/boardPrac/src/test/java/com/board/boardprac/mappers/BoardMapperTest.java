@@ -1,8 +1,6 @@
-package com.example.board.mappers;
+package com.board.boardprac.mappers;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
-
-import com.example.board.beans.vo.BoardVO;
+import com.board.boardprac.beans.vo.BoardVO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

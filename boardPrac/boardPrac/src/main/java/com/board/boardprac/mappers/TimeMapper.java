@@ -1,4 +1,4 @@
-package com.example.board.mappers;
+package com.board.boardprac.mappers;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Service;

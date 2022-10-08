@@ -1,4 +1,4 @@
-package com.example.board.mappers;
+package com.board.boardprac.mappers;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.example.board.mybatis;
+package com.board.boardprac.mybatis;
 
 import java.sql.Connection;
 

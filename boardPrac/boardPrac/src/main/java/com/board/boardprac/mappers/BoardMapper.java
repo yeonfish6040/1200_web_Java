@@ -1,10 +1,10 @@
-package com.example.board.mappers;
+package com.board.boardprac.mappers;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.board.beans.vo.BoardVO;
+import com.board.boardprac.beans.vo.BoardVO;
 
 @Mapper
 public interface BoardMapper {

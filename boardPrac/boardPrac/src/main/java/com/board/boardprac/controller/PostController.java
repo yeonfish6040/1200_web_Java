@@ -1,10 +1,9 @@
-package com.example.board.controller;
+package com.board.boardprac.controller;
 
+import com.board.boardprac.dto.MemberDto;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.example.board.dto.MemberDto;
 
 import lombok.extern.slf4j.Slf4j;
 

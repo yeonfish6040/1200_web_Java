@@ -3,6 +3,6 @@
                         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias alias="boardVO" type="com.example.board.beans.vo.BoardVO" /> 
+		<typeAlias alias="boardVO" type="com.board.boardprac.beans.vo.BoardVO" />
 	</typeAliases>
 </configuration>                       
