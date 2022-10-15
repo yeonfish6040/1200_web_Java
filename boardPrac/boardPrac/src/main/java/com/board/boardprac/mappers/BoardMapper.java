@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 
 import com.board.boardprac.beans.vo.BoardVO;
+import org.springframework.stereotype.Service;
 
 @Mapper
 public interface BoardMapper {

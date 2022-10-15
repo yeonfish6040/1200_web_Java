@@ -1,8 +1,9 @@
-package com.board.boardprac.beans.DAO;
+package com.board.boardprac.beans.dao;
 
 import com.board.boardprac.beans.vo.BoardVO;
 import com.board.boardprac.mappers.BoardMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,6 +11,8 @@ import java.util.List;
 @Repository
 @RequiredArgsConstructor
 public class BoardDAO {
+
+    @Autowired
     private BoardMapper mapper;
 
     public void register(BoardVO board) {

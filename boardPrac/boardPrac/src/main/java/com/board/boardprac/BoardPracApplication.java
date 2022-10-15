@@ -1,5 +1,7 @@
 package com.board.boardprac;
 
+import com.board.boardprac.mappers.BoardMapper;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
