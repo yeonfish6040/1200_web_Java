@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+    <title>Get</title>
+</head>
+<body>
+    <h1>게시글 상세보기</h1>
+    <form action="modify" method="post" th:object="${board}">
+        <h4>번호</h4>
+        <input type="text" name="bno" th:field="*{bno}" readonly />
+        <h4>제목</h4>
+        <input type="text" name="title" th:field="*{title}">
+        <h4>내용</h4>
+        <textarea name="content" rows="6" th:text="*{content}"></textarea>
+        <h4>작성자</h4>
+        <input type="text" name="writer" th:field="*{writer}" readonly />
+        <br>
+        <input type="submit" value="수정">
+        <input type="button" value="삭제" onclick="postAction()">
+    </form>
+</body>
+<script th:inline="javascript">
+    function postAction() {
+        let bno = [[${board.getBno()}]]
+        location.href='board/delete?bno='+bno
+    }
+</script>
+</html>

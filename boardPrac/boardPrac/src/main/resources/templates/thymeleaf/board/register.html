@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Register(새 글 등록)</h1>
+    <form action="" method="post" id="registForm">
+        <h4>제목</h4>
+        <input type="text" name="title" placeholder="title">
+        <h4>내용</h4>
+        <textarea name="content" id="content" cols="30" rows="10" placeholder="Content"></textarea>
+        <h4>작성자</h4>
+        <input type="text" name="writer" placeholder="writer">
+        <input type="submit" value="Register">
+    </form>
+</body>
+<script>
+    text = ""
+    $("#content").on("change paste keyup input", () => {
+        if (new Blob([$("#content").val()]).size > 2000) {
+            alert("허용 가능한 게시물의 내용 크기는 2000byte 입니다.")
+            $("#content").val(text);
+        }else {
+            text = $("#content").val();
+        }
+    })
+</script>
+</html>

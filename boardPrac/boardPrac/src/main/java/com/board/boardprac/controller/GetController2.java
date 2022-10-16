@@ -17,7 +17,7 @@ public class GetController2 {
 		log.info("GetController2:showView() : Called");
 		log.info("dto : " + dto.toString());
 		log.info("----------------");
-		return "view";
+		return "thymeleaf/view";
 	}
 	
 	@GetMapping("/testresult")
@@ -26,6 +26,6 @@ public class GetController2 {
 		log.info("GetController2:showResult() : Called");
 		log.info("dto : " + dto.toString());
 		log.info("----------------");
-		return "testresult2";
+		return "thymeleaf/testresult2";
 	}
 }

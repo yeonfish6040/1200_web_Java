@@ -1,6 +1,7 @@
 package com.board.boardprac.beans.dao;
 
 import com.board.boardprac.beans.vo.BoardVO;
+import com.board.boardprac.beans.vo.Criteria;
 import com.board.boardprac.mappers.BoardMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +34,12 @@ public class BoardDAO {
 
     public List<BoardVO> getList() {
         return mapper.getList();
+    }
+    public List<BoardVO> getList(Criteria cri) {
+        return mapper.getListWithPaging(cri);
+    }
+
+    public int getTotal() {
+        return mapper.getTotal();
     }
 }

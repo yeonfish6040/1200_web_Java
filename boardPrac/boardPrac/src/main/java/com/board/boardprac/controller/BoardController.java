@@ -1,9 +1,12 @@
 package com.board.boardprac.controller;
 
 import com.board.boardprac.beans.vo.BoardVO;
+import com.board.boardprac.beans.vo.Criteria;
+import com.board.boardprac.dto.pageDTO;
 import com.board.boardprac.services.BoardService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -11,7 +14,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
 
-@RestController
+@Controller
 @Slf4j
 @RequiredArgsConstructor
 @RequestMapping("/board/*")
@@ -19,19 +22,20 @@ public class BoardController {
     private final BoardService service;
 
     @GetMapping("list")
-    public String list(Model model) {
+    public String list(Criteria cri, Model model) {
         log.info("----------------------------------------------");
         log.info("List called");
         log.info("----------------------------------------------");
 
-        model.addAttribute("list", service.getList());
+        model.addAttribute("list", service.getList(cri));
+        model.addAttribute("pageMaker", new pageDTO(cri, service.getTotal()));
 
-        return "hi";
+        return "thymeleaf/board/list";
     }
 
 //    @GetMapping("register")
     public void register() {}
-
+    
     @PostMapping("register")
     public RedirectView register(BoardVO boardVO, RedirectAttributes rttr) {
         log.info("----------------------------------------------");
@@ -43,8 +47,8 @@ public class BoardController {
         return new RedirectView("list");
     }
 
-    @RequestMapping({"get", "modify"})
-    public void get(@RequestParam("bno") Long bno, HttpServletRequest req, Model model) {
+    @GetMapping({"get", "modify"})
+    public String get(@RequestParam("bno") Long bno, HttpServletRequest req, Model model) {
         String reqURI = req.getRequestURI();
         String type = reqURI.replace("/board/", "");
 
@@ -52,34 +56,27 @@ public class BoardController {
         log.info(type+" called, "+bno);
         log.info("----------------------------------------------");
 
-        if (type == "get") {
-            model.addAttribute("board", service.get(bno));
-        } else if (type == "modify") {
-            if (service.modify(board))
-                rttr.addAttribute("result", "success");
-            else
-                rttr.addAttribute("result", "fail");
-        }
+        model.addAttribute("board", service.get(bno));
+        return "thymeleaf/board/get";
     }
 
-//    @GetMapping("get")
-    public String get(@RequestParam("bno") Long bno, Model model) {
+    @PostMapping("get")
+    public void get(@RequestParam("bno") Long bno, Model model) {
         log.info("----------------------------------------------");
         log.info("get called: "+bno);
         log.info("----------------------------------------------");
 
         model.addAttribute("board", service.get(bno));
-
-        return model.toString();
     }
 
-//    @PostMapping("modify")
+    @PostMapping("modify")
     public RedirectView modify(BoardVO board, RedirectAttributes rttr) {
         log.info("modify: "+board);
 
-        if (service.modify(board))
+        if (service.modify(board)) {
             rttr.addAttribute("result", "success");
-        else
+            rttr.addAttribute("board", service.get(board.getBno()));
+        }else
             rttr.addAttribute("result", "fail");
 
         return new RedirectView("list");

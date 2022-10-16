@@ -1,6 +1,8 @@
 package com.board.boardprac.mappers;
 
 import com.board.boardprac.beans.vo.BoardVO;
+import com.board.boardprac.beans.vo.Criteria;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,12 +16,14 @@ public class BoardMapperTest {
 	@Autowired
 	private BoardMapper mapper;
 	
-//	@Test
+	@Test
+	@Disabled
 	public void testGetList() {
 		mapper.getList().forEach(board -> log.info(board.toString()));
 	}
 
-//	@Test
+	@Test
+	@Disabled
 	public void testInsert() {
 		BoardVO board = new BoardVO();
 		board.setTitle("새로 작성한 글 제목");
@@ -29,7 +33,8 @@ public class BoardMapperTest {
 		mapper.insert(board);
 	}
 
-//	@Test
+	@Test
+//	@Disabled
 	public void testInsertSelectKey_bno() {
 		BoardVO board = new BoardVO();
 		board.setTitle("새로 작성한 글 제목");
@@ -38,18 +43,21 @@ public class BoardMapperTest {
 		mapper.insertSelectKey_bno(board);
 	}
 
-//	@Test
+	@Test
+	@Disabled
 	public void testRead() {
 		String str = mapper.read(1L).toString();
 		log.info(str);
 	}
 
-//	@Test
+	@Test
+	@Disabled
 	public void testDelete() {
 		log.info(String.valueOf(mapper.delete(3L)));
 	}
 
 	@Test
+	@Disabled
 	public void testUpdate() {
 
 		Long bno = 1L;
@@ -68,5 +76,12 @@ public class BoardMapperTest {
 			int count = mapper.update(board);
 			log.info("count: " + count);
 		}
+	}
+
+	@Test
+	@Disabled
+	public void testGetListWithPaging() {
+		Criteria cri = new Criteria(2, 2);
+		log.info(mapper.getListWithPaging(cri).toString());
 	}
 }

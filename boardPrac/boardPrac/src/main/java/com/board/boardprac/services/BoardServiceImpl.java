@@ -2,6 +2,7 @@ package com.board.boardprac.services;
 
 import com.board.boardprac.beans.dao.BoardDAO;
 import com.board.boardprac.beans.vo.BoardVO;
+import com.board.boardprac.beans.vo.Criteria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,4 +38,11 @@ public class BoardServiceImpl implements BoardService{
     public List<BoardVO> getList() {
         return boardDAO.getList();
     }
+    @Override
+    public List<BoardVO> getList(Criteria cri) {
+        return boardDAO.getList(cri);
+    }
+
+    @Override
+    public int getTotal() { return boardDAO.getTotal(); }
 }
