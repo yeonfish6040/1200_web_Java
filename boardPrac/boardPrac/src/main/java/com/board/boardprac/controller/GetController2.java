@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Controller
+//@Controller
 @Slf4j
 public class GetController2 {
 	@GetMapping("/viewtest")

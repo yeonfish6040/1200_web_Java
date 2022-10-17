@@ -28,10 +28,10 @@ public class pageDTO {
 
         if (realEnd < this.endPage) {
             this.endPage = realEnd == 0 ? 1:realEnd;
-
-            this.prev = this.startPage > 1;
-
-            this.next = this.endPage < realEnd;
         }
+
+        this.prev = this.startPage > 1;
+
+        this.next = this.endPage < realEnd;
     }
 }

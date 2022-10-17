@@ -27,6 +27,10 @@ public class BoardController {
         log.info("List called");
         log.info("----------------------------------------------");
 
+        if (model.getAttribute("page") != null) {
+            cri = new Criteria(Integer.valueOf(model.getAttribute("page").toString()));
+        }
+
         model.addAttribute("list", service.getList(cri));
         model.addAttribute("pageMaker", new pageDTO(cri, service.getTotal()));
 
@@ -94,5 +98,12 @@ public class BoardController {
             rttr.addFlashAttribute("result", "fail");
 
         return new RedirectView("list");
+    }
+
+
+    @GetMapping("{page}")
+    public RedirectView listPaging(@PathVariable("page") int page, RedirectAttributes rttr) {
+        rttr.addFlashAttribute("page", page);
+        return new RedirectView("./list");
     }
 }
