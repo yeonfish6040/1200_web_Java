@@ -101,7 +101,7 @@ public class BoardController {
     }
 
 
-    @GetMapping("{page}")
+    @GetMapping("{page:[0-9]*}")
     public RedirectView listPaging(@PathVariable("page") int page, RedirectAttributes rttr) {
         rttr.addFlashAttribute("page", page);
         return new RedirectView("./list");
