@@ -39,7 +39,7 @@ public class BoardDAO {
         return mapper.getListWithPaging(cri);
     }
 
-    public int getTotal() {
-        return mapper.getTotal();
+    public int getTotal(Criteria cri) {
+        return mapper.getTotal(cri);
     }
 }

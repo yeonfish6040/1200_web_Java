@@ -32,26 +32,28 @@ public class BoardController {
         }
 
         model.addAttribute("list", service.getList(cri));
-        model.addAttribute("pageMaker", new pageDTO(cri, service.getTotal()));
+        model.addAttribute("pageMaker", new pageDTO(cri, service.getTotal(cri)));
 
         return "thymeleaf/board/list";
     }
 
-//    @GetMapping("register")
-    public void register() {}
+    @GetMapping("register")
+    public String register() {
+        return "thymeleaf/board/register";
+    }
     
     @PostMapping("register")
     public RedirectView register(BoardVO boardVO, RedirectAttributes rttr) {
         log.info("----------------------------------------------");
         log.info("Register called: "+boardVO);
         log.info("----------------------------------------------");
-
+        service.register(boardVO);
         rttr.addFlashAttribute("bno", boardVO.getBno());
 
         return new RedirectView("list");
     }
 
-    @GetMapping({"get", "modify"})
+    @GetMapping({"get"})
     public String get(@RequestParam("bno") Long bno, HttpServletRequest req, Model model) {
         String reqURI = req.getRequestURI();
         String type = reqURI.replace("/board/", "");
@@ -62,6 +64,13 @@ public class BoardController {
 
         model.addAttribute("board", service.get(bno));
         return "thymeleaf/board/get";
+    }
+
+    @GetMapping("delete")
+    public RedirectView delete(@RequestParam long bno) {
+        service.remove(bno);
+
+        return new RedirectView("list");
     }
 
     @PostMapping("get")
@@ -75,13 +84,13 @@ public class BoardController {
 
     @PostMapping("modify")
     public RedirectView modify(BoardVO board, RedirectAttributes rttr) {
-        log.info("modify: "+board);
 
         if (service.modify(board)) {
             rttr.addAttribute("result", "success");
-            rttr.addAttribute("board", service.get(board.getBno()));
-        }else
+            rttr.addAttribute("board", service.get(board.getBno()).toString());
+        }else {
             rttr.addAttribute("result", "fail");
+        }
 
         return new RedirectView("list");
     }
@@ -101,6 +110,7 @@ public class BoardController {
     }
 
 
+    // paging
     @GetMapping("{page:[0-9]*}")
     public RedirectView listPaging(@PathVariable("page") int page, RedirectAttributes rttr) {
         rttr.addFlashAttribute("page", page);

@@ -4,5 +4,6 @@
 <configuration>
 	<typeAliases>
 		<typeAlias alias="boardVO" type="com.board.boardprac.beans.vo.BoardVO" />
+		<typeAlias alias="replyVO" type="com.board.boardprac.beans.vo.ReplyVO" />
 	</typeAliases>
 </configuration>
