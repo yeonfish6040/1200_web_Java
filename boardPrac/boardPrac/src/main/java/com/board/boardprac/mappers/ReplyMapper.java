@@ -10,6 +10,7 @@ import java.util.List;
 
 @Mapper
 public interface ReplyMapper {
+
     public int insert(ReplyVO replyVO);
     public ReplyVO read(Long rno);
     public int delete(Long rno);
