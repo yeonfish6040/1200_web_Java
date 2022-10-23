@@ -1,11 +1,11 @@
 package com.board.boardprac.controller;
 
+import com.board.boardprac.DevController.logger;
 import com.board.boardprac.beans.vo.BoardVO;
 import com.board.boardprac.beans.vo.Criteria;
 import com.board.boardprac.dto.pageDTO;
 import com.board.boardprac.services.BoardService;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -15,34 +15,35 @@ import org.springframework.web.servlet.view.RedirectView;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@Slf4j
 @RequiredArgsConstructor
-@RequestMapping("/board/*")
+@RequestMapping("/board")
 public class BoardController {
+    private logger log = new logger();
     private final BoardService service;
 
-    @GetMapping("list")
+    @GetMapping("/list")
     public String list(Criteria cri, Model model) {
         log.info("----------------------------------------------");
         log.info("List called");
         log.info("----------------------------------------------");
 
-        if (model.getAttribute("page") != null) {
-            cri = new Criteria(Integer.valueOf(model.getAttribute("page").toString()));
-        }
+//        if (model.getAttribute("page") != null) {
+//            cri = new Criteria(Integer.valueOf(model.getAttribute("page").toString()));
+//        }
 
         model.addAttribute("list", service.getList(cri));
         model.addAttribute("pageMaker", new pageDTO(cri, service.getTotal(cri)));
 
+
         return "thymeleaf/board/list";
     }
 
-    @GetMapping("register")
+    @GetMapping("/register")
     public String register() {
         return "thymeleaf/board/register";
     }
     
-    @PostMapping("register")
+    @PostMapping("/register")
     public RedirectView register(BoardVO boardVO, RedirectAttributes rttr) {
         log.info("----------------------------------------------");
         log.info("Register called: "+boardVO);
@@ -53,7 +54,7 @@ public class BoardController {
         return new RedirectView("list");
     }
 
-    @GetMapping({"get"})
+    @GetMapping({"/get"})
     public String get(@RequestParam("bno") Long bno, HttpServletRequest req, Model model) {
         String reqURI = req.getRequestURI();
         String type = reqURI.replace("/board/", "");
@@ -66,14 +67,14 @@ public class BoardController {
         return "thymeleaf/board/get";
     }
 
-    @GetMapping("delete")
+    @GetMapping("/delete")
     public RedirectView delete(@RequestParam long bno) {
         service.remove(bno);
 
         return new RedirectView("list");
     }
 
-    @PostMapping("get")
+    @PostMapping("/get")
     public void get(@RequestParam("bno") Long bno, Model model) {
         log.info("----------------------------------------------");
         log.info("get called: "+bno);
@@ -82,7 +83,7 @@ public class BoardController {
         model.addAttribute("board", service.get(bno));
     }
 
-    @PostMapping("modify")
+    @PostMapping("/modify")
     public RedirectView modify(BoardVO board, RedirectAttributes rttr) {
 
         if (service.modify(board)) {
@@ -95,7 +96,7 @@ public class BoardController {
         return new RedirectView("list");
     }
 
-    @PostMapping("remove")
+    @PostMapping("/remove")
     public RedirectView remove(@RequestParam("bno") Long bno, RedirectAttributes rttr) {
         log.info("----------------------------------------------");
         log.info("remove called: "+bno);
@@ -111,9 +112,15 @@ public class BoardController {
 
 
     // paging
-    @GetMapping("{page:[0-9]*}")
+//    @GetMapping("/{page:[0-9]*}")
     public RedirectView listPaging(@PathVariable("page") int page, RedirectAttributes rttr) {
         rttr.addFlashAttribute("page", page);
         return new RedirectView("./list");
+    }
+
+    // main redirect
+    @GetMapping("")
+    public RedirectView mainView() {
+        return new RedirectView("/board/list");
     }
 }

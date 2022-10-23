@@ -1,151 +1,197 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
-  <script type="text/javascript" src="/js/jquery.min.js"></script>
-  <title>List</title>
-  <style>
-    @media (max-width: 918px) {
-      .writer   { display: none; }
-      .regdate   { display: none; }
-      .updatedate   { display: none; }
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <title>List</title>
+    <style>
+        @media (max-width: 918px) {
+            .writer     { display: none; }
+            .regdate     { display: none; }
+            .updatedate     { display: none; }
+        }
 
-    a {
-      text-decoration: none;
-      color: none;
-    }
+        a {
+            text-decoration: none;
+            color: unset;
+        }
 
-    .changePage {
-      color: gray;
-    }
+        .changePage {
+            color: gray;
+            cursor: pointer;
+        }
 
-    .current {
-      color: #242424;
-    }
+        .changePage:hover {
+            color: sandybrown;
+        }
 
-    .register {
-      float: right;
-    }
+        .current {
+            color: #242424;
+        }
 
-  .container {
-    margin-top: 100px;
-  }
+        .register {
+            float: right;
+        }
 
-  .post {
-    color: #1e2125;
-  }
+        .container {
+            margin-top: 100px;
+        }
 
-  .post:hover {
-    color: gray;
-  }
+        .post {
+            color: #1e2125;
+        }
 
-  .writer {
-    color: #1e2125;
-    cursor: pointer;
-  }
+        .post:hover {
+            color: gray;
+        }
 
-  .writer:hover {
-    color: gray;
-  }
+        .writer:not(.thead) {
+            color: #1e2125;
+            cursor: pointer;
+        }
 
-  .writer:active {
-    color: sandybrown;
-  }
-  </style>
+        .writer:not(.thead):hover {
+            color: gray;
+        }
+
+        .writer:not(.thead):active {
+            color: sandybrown;
+        }
+
+        .type, #keyword {
+            display: inline-block;
+            height: 5vh;
+        }
+
+        #keyword {
+            width: 40%;
+        }
+
+        .type {
+            width: 25%;
+        }
+    </style>
 </head>
 <body>
-  <div class="row justify-content-center">
-    <div class="container col-6">
-      <h3 class="register"><a href="register">글 등록</a></h3>
-      <form method="get" accept-charset="list" id="searchForm" th:object="${pageMaker}">
-        <div id="searchWrap" th:object="${Criteria}">
-          <select name="type" class="type">
-            <option value="T">제목</option>
-            <option value="C">내용</option>
-            <option value="W">작성자</option>
-            <option value="TC">제목 또는 내용</option>
-            <option value="TW">제목 또는 작성자</option>
-            <option value="TCW">복합적</option>
-          </select>
-          <input type="text" id="keyword" name="keyword">
-          <a href="javascript:void(0)" class="search btn btn-outline-info">검색</a>
-        </div>
-      </form>
-      <table class="table">
-        <thead>
-        <tr>
-          <th>번호</th>
-          <th>제목</th>
-          <th class="writer">작성자</th>
-          <th class="regdate">작성일</th>
-          <th class="updatedate">수정일</th>
-        </tr>
-        </thead>
-        <tbody>
-        <th:block th:each="board:${list}">
-          <tr th:object="${board}">
-            <td th:text="*{bno}"></td>
-            <td><a class="post" th:text="*{title}" th:href="@{/board/get(bno=*{bno})}"></a></td>
-            <td class="writer" th:text="*{writer}"></td>
-            <td class="regdate" th:text="*{regdate}"></td>
-            <td class="updatedate" th:text="*{updatedate}"></td>
-          </tr>
-        </th:block>
-        </tbody>
-        <tfoot>
-        </tfoot>
-      </table>
+    <div class="row justify-content-center">
+        <div class="container col-6">
+<!--     right float post register btn     -->
+            <h3 class="register"><a class="btn btn-outline-dark" href="register">글 등록</a></h3>
+            <form method="get" accept-charset="list" id="searchForm" th:object="${pageMaker}" onkeydown="return event.key != 'Enter';">
+                <div id="searchWrap" th:object="${Criteria}">
+                    <select name="type" class="type form-select">
+                        <option value="T">제목</option>
+                        <option value="C">내용</option>
+                        <option value="W">작성자</option>
+                        <option value="TC">제목 또는 내용</option>
+                        <option value="TW">제목 또는 작성자</option>
+                        <option value="TCW">복합적</option>
+                    </select>
+                    <input type="text" class="form-control input-sm" id="keyword" name="keyword">
+                    <a href="javascript:void(0)" class="search btn btn-outline-info">검색</a>
+                </div>
+            </form>
 
-      <div th:object="${pageMaker}">
-        <div style="text-align: center">
-          <a class="changePage" th:if="*{prev}" th:href="*{startPage-1}"><code>&lt;</code></a>
-          <th:block th:each="num:${#numbers.sequence(pageMaker.getStartPage(), pageMaker.getEndPage())}">
-            <code class="current" th:if="${pageMaker.criteria.getPageNum() == num}" th:text="${num}"></code>
-            <a class="changePage" th:unless="${pageMaker.criteria.getPageNum() == num}" th:href="${num}"><code th:text="${num}"></code></a>
-          </th:block>
-          <a class="changePage" th:if="*{next}" th:href="*{endPage+1}"><code>&gt;</code></a>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th class="writer thead">작성자</th>
+                    <th class="regdate thead">작성일</th>
+                    <th class="updatedate thead">수정일</th>
+                </tr>
+                </thead>
+                <tbody>
+                <th:block th:each="board:${list}">
+                    <tr th:object="${board}">
+                        <td th:text="*{bno}"></td>
+                        <td><a class="post" th:text="*{title}" th:href="@{/board/get(bno=*{bno})}"></a></td>
+                        <td class="writer" th:attrappend="class=' '+*{bno}" th:text="*{writer}"></td>
+                        <td class="regdate" th:text="*{regdate}"></td>
+                        <td class="updatedate" th:text="*{updatedate}"></td>
+                    </tr>
+                </th:block>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+
+            <div th:object="${pageMaker}">
+                <div style="text-align: center">
+                    <span class="changePage" th:if="*{prev}" th:href="*{startPage-1}"><code>&lt;</code></span>
+                    <th:block th:each="num:${#numbers.sequence(pageMaker.getStartPage(), pageMaker.getEndPage())}">
+                        <code class="current" th:if="${pageMaker.criteria.getPageNum() == num}" th:text="${num}"></code>
+                        <span class="changePage" th:unless="${pageMaker.criteria.getPageNum() == num}" th:href="${num}"><code th:text="${num}"></code></span>
+                    </th:block>
+                    <span class="changePage" th:if="*{next}" th:href="*{endPage+1}"><code>&gt;</code></span>
+                </div>
+
+                <form action="/board/list" th:object="${criteria}" name="pageForm" id="pageForm">
+                    <input type="hidden" id="hidden_pageNum" name="pageNum" th:field="*{pageNum}">
+                    <input type="hidden" id="hidden_amount" name="amount" th:field="*{amount}">
+                    <input type="hidden" id="hidden_type" name="type" th:field="*{type}">
+                    <input type="hidden" id="hidden_keyword" name="keyword" th:field="*{keyword}">
+                </form>
+            </div>
         </div>
-        <form action="/board/list" th:object="${criteria}" name="pageForm">
-          <input type="hidden" name="pageNum" th:field="*{pageNum}">
-          <input type="hidden" name="amount" th:field="*{amount}">
-          <input type="hidden" name="type" th:field="*{type}">
-          <input type="hidden" name="keyword" th:field="*{keyword}">
-        </form>
-      </div>
     </div>
-  </div>
 </body>
 <script th:inline="javascript">
-  let pageForm = $(document.pageForm);
-  let searchForm = $("#searchForm")
-  // let bno = [[${bno}]]
-  // console.log(bno)
-  // window.onload = function () {
-  //   if (bno == '' || history.state) {
-  //     return
-  //   }
-  //   if (parseInt(bno) > 0) {
-  //     alert("게시글 "+parseInt(bno)+"번이 등록되었습니다.")
-  //   }
-  // }
-  // $("a.changePage").click(function (e) {
-  //   pageForm.find("input[name='pageNum']").val($(this).attr("href"));
-  //   pageForm.submit();
-  // });
-  $("#searchForm a").on("click", function (e) {
-    e.preventDefault();
-    if (searchForm.find("option:selected").val()) {
-      if (searchForm.find("input[name='keyword']").val()) {
-          searchForm.submit();
-      }else {
-        alert("검색내용을 입력하세요")
-      }
-    }else {
-      alert("검색기준을 선택하세요")
+    let pageForm = $(document.pageForm);
+    let searchForm = $("#searchForm")
+    // let bno = [[${bno}]]
+    // console.log(bno)
+    // window.onload = function () {
+    //     if (bno == '' || history.state) {
+    //         return
+    //     }
+    //     if (parseInt(bno) > 0) {
+    //         alert("게시글 "+parseInt(bno)+"번이 등록되었습니다.")
+    //     }
+    // }
+
+    if ($("#hidden_keyword").val() != "" && $("#hidden_type").val() != "") {
+        $("#keyword").val($("#hidden_keyword").val());
+        $(".type").val($("#hidden_type").val());
     }
-  })
+
+    function search(e) {
+        e.preventDefault();
+        if (searchForm.find("option:selected").val()) {
+            if (searchForm.find("input[name='keyword']").val()) {
+                searchForm.submit();
+            }else {
+                alert("검색내용을 입력하세요")
+            }
+        }else {
+            alert("검색기준을 선택하세요")
+        }
+    }
+
+    function searchWriter(e) {
+        writer = $(e.delegateTarget).text();
+        searchForm.find("option:selected").val("W")
+        searchForm.find("input[name='keyword']").val(writer)
+        searchForm.submit();
+    }
+
+    function movePage(e) {
+        pageForm.find("input[name='pageNum']").val($(this).attr("href"));
+        pageForm.submit();
+    }
+
+    function previous() {
+        history.back();
+    }
+
+    // event hanndler
+    $(this).on("keydown", function (e) { if(e.keyCode == 27) previous() })
+    $(".changePage").on("click", movePage);
+    $("#searchForm a").on("click", search)
+    $("#keyword").on("keydown", function (e) { if(e.keyCode == 13) search(e) })
+    $(".writer:not(.thead)").on("click", searchWriter)
 </script>
 </html>

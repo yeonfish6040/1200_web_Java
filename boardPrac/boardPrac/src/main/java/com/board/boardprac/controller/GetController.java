@@ -1,14 +1,13 @@
 package com.board.boardprac.controller;
 
+import com.board.boardprac.DevController.logger;
 import com.board.boardprac.dto.MemberDto;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import lombok.extern.slf4j.Slf4j;
 
 //@RestController
-@Slf4j
 public class GetController {
+
+	private logger log = new logger();
 	
 	@GetMapping("/board")
 	public String showBoard() {

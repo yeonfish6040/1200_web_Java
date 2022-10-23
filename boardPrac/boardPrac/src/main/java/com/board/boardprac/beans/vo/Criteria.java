@@ -1,9 +1,12 @@
 package com.board.boardprac.beans.vo;
 
+import com.board.boardprac.DevController.logger;
 import lombok.Data;
 
 @Data
 public class Criteria {
+
+    private logger log = new logger();
     private int pageNum;
     private int amount;
     private String type;

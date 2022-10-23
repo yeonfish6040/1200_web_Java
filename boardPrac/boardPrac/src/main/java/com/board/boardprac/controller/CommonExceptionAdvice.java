@@ -1,6 +1,6 @@
 package com.board.boardprac.controller;
 
-import lombok.extern.slf4j.Slf4j;
+import com.board.boardprac.DevController.logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -10,9 +10,10 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 
 import java.util.Arrays;
 
-@Slf4j
 @ControllerAdvice
 public class CommonExceptionAdvice {
+
+    private logger log = new logger();
 
     @ExceptionHandler(Exception.class)
     public String except(Exception e, Model model) {

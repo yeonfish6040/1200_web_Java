@@ -1,15 +1,14 @@
 package com.board.boardprac.controller;
 
+import com.board.boardprac.DevController.logger;
 import com.board.boardprac.dto.MemberDto;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
-
-import lombok.extern.slf4j.Slf4j;
 
 //@RestController
-@Slf4j
 public class PostController {
+
+	private logger log = new logger();
 	
 	@PostMapping("/board")
 	public String showBoard() {

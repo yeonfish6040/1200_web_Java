@@ -1,16 +1,15 @@
 package com.board.boardprac.controller;
 
+import com.board.boardprac.DevController.logger;
 import com.board.boardprac.dto.MemberDto;
 import com.board.boardprac.dto.SubjectDto;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
-import lombok.extern.slf4j.Slf4j;
-
 //@Controller
-@Slf4j
 public class GetController2 {
+
+	private logger log = new logger();
 	@GetMapping("/viewtest")
 	public String showView(@ModelAttribute("dto") MemberDto dto) {
 		log.info("----------------");

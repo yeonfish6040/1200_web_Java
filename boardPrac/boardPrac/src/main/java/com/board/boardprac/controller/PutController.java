@@ -1,17 +1,16 @@
 package com.board.boardprac.controller;
 
+import com.board.boardprac.DevController.logger;
 import com.board.boardprac.dto.MemberDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
-
-import lombok.extern.slf4j.Slf4j;
 
 //@RestController
-@Slf4j
 public class PutController {
+
+	private logger log = new logger();
 	
 	//http://localhost:10002/member1
 	@PutMapping("/member1")
