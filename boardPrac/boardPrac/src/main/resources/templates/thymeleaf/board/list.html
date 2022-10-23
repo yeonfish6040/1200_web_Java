@@ -25,13 +25,56 @@
     .current {
       color: #242424;
     }
+
+    .register {
+      float: right;
+    }
+
+  .container {
+    margin-top: 100px;
+  }
+
+  .post {
+    color: #1e2125;
+  }
+
+  .post:hover {
+    color: gray;
+  }
+
+  .writer {
+    color: #1e2125;
+    cursor: pointer;
+  }
+
+  .writer:hover {
+    color: gray;
+  }
+
+  .writer:active {
+    color: sandybrown;
+  }
   </style>
 </head>
 <body>
   <div class="row justify-content-center">
-    <div class="col-6">
-      <h3><a href="register">글 등록</a></h3>
-      <table class="table table-dark">
+    <div class="container col-6">
+      <h3 class="register"><a href="register">글 등록</a></h3>
+      <form method="get" accept-charset="list" id="searchForm" th:object="${pageMaker}">
+        <div id="searchWrap" th:object="${Criteria}">
+          <select name="type" class="type">
+            <option value="T">제목</option>
+            <option value="C">내용</option>
+            <option value="W">작성자</option>
+            <option value="TC">제목 또는 내용</option>
+            <option value="TW">제목 또는 작성자</option>
+            <option value="TCW">복합적</option>
+          </select>
+          <input type="text" id="keyword" name="keyword">
+          <a href="javascript:void(0)" class="search btn btn-outline-info">검색</a>
+        </div>
+      </form>
+      <table class="table">
         <thead>
         <tr>
           <th>번호</th>
@@ -45,7 +88,7 @@
         <th:block th:each="board:${list}">
           <tr th:object="${board}">
             <td th:text="*{bno}"></td>
-            <td><a th:text="*{title}" th:href="@{/board/get(bno=*{bno})}"></a></td>
+            <td><a class="post" th:text="*{title}" th:href="@{/board/get(bno=*{bno})}"></a></td>
             <td class="writer" th:text="*{writer}"></td>
             <td class="regdate" th:text="*{regdate}"></td>
             <td class="updatedate" th:text="*{updatedate}"></td>
@@ -55,21 +98,6 @@
         <tfoot>
         </tfoot>
       </table>
-      <form method="get" accept-charset="list" id="searchForm" th:object="${pageMaker}">
-        <div id="searchWrap" th:object="${Criteria}">
-          <select name="type" class="type">
-            <option value="">-검색기준-</option>
-            <option value="T">제목</option>
-            <option value="C">내용</option>
-            <option value="W">작성자</option>
-            <option value="TC">제목 또는 내용</option>
-            <option value="TW">제목 또는 작성자</option>
-            <option value="TCW">복합적</option>
-          </select>
-          <input type="text" id="keyword" name="keyword">
-          <a href="javascript:void(0)" class="search btn btn-outline-info">검색</a>
-        </div>
-      </form>
 
       <div th:object="${pageMaker}">
         <div style="text-align: center">
