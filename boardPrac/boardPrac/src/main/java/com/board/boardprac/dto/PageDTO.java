@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Data
-public class pageDTO {
+public class PageDTO {
     private int startPage;
     private int endPage;
     private int realEnd;
@@ -15,9 +15,9 @@ public class pageDTO {
     private int total;
     private Criteria criteria;
 
-    public pageDTO() {}
+    public PageDTO() {}
 
-    public pageDTO(Criteria cri, int total) {
+    public PageDTO(Criteria cri, int total) {
         this.criteria = cri;
         this.total = total;
 

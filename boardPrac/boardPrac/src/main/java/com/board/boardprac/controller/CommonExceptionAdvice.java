@@ -16,6 +16,7 @@ public class CommonExceptionAdvice {
     private logger log = new logger();
 
     @ExceptionHandler(Exception.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public String except(Exception e, Model model) {
 
         StringBuffer err = new StringBuffer();
@@ -38,6 +39,6 @@ public class CommonExceptionAdvice {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public String handler_404(NoHandlerFoundException e, Model model) {
         model.addAttribute("Exception", e);
-        return "thymeleaf/error";
+        return "error";
     }
 }

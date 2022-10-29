@@ -25,6 +25,16 @@ let replyService = {
             })
         } catch (e) {}
     },
+        getTotal: (bno, page, callback, error) => {
+        try {
+            $.ajax({
+                type: "GET",
+                url: "/reply/pages/c/"+bno+"/"+(page||1),
+                success: callback,
+                error: error
+            })
+        } catch (e) {}
+    },
     add: (reply, callback, error) => {
         try {
             $.ajax({

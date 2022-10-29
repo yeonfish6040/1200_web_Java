@@ -29,5 +29,6 @@ public class ReplyDAO {
     public boolean remove(Long rno){
         return mapper.delete(rno) != 0;
     }
+    public int getTotal(Long bno) { return mapper.getTotal(bno); };
     public List<ReplyVO> getList(Criteria cri, Long bno){ return mapper.getListWithPaging(cri, bno); }
 }

@@ -3,7 +3,7 @@ package com.board.boardprac.controller;
 import com.board.boardprac.DevController.logger;
 import com.board.boardprac.beans.vo.BoardVO;
 import com.board.boardprac.beans.vo.Criteria;
-import com.board.boardprac.dto.pageDTO;
+import com.board.boardprac.dto.PageDTO;
 import com.board.boardprac.services.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -32,15 +32,15 @@ public class BoardController {
 //        }
 
         model.addAttribute("list", service.getList(cri));
-        model.addAttribute("pageMaker", new pageDTO(cri, service.getTotal(cri)));
+        model.addAttribute("pageMaker", new PageDTO(cri, service.getTotal(cri)));
 
 
-        return "thymeleaf/board/list";
+        return "board/list";
     }
 
     @GetMapping("/register")
     public String register() {
-        return "thymeleaf/board/register";
+        return "board/register";
     }
     
     @PostMapping("/register")
@@ -64,7 +64,7 @@ public class BoardController {
         log.info("----------------------------------------------");
 
         model.addAttribute("board", service.get(bno));
-        return "thymeleaf/board/get";
+        return "board/get";
     }
 
     @GetMapping("/delete")

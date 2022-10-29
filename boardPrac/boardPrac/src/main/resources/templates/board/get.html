@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/board/reply.js"></script>
+    <title>Get</title>
+    <style>
+        .container h1 {
+            text-align: center;
+        }
+        .got {
+            border-top: none;
+            border-bottom: none;
+        }
+        .btn {
+            float: right;
+        }
+        .reply.new {
+            display: inline-block;
+            height: 5vh;
+        }
+        .reply.new.writer {
+            width: 20%;
+        }
+        .reply.new.content {
+            width: 70%;
+        }
+        .reply.new.submit {
+            width: 8%;
+        }
+        .changePage {
+            color: gray;
+            cursor: pointer;
+        }
+
+        .changePage:hover {
+            color: sandybrown;
+        }
+
+        .current {
+            color: #242424;
+        }
+
+        .page {
+            text-align: center;
+        }
+
+        .page code {
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>게시글 상세보기</h1>
+        <form action="modify" method="post" th:object="${board}" onkeydown="return event.key != 'Enter';">
+            <input type="submit" class="btn btn-outline-warning" value="수정">
+            <input type="button" class="btn btn-outline-danger" value="삭제" onclick="postAction()">
+            <label for="bno"><h5>번호</h5></label>
+            <input type="text" class="form-control got" id="bno" name="bno" th:field="*{bno}" readonly />
+            <label for="title"><h5>제목</h5></label>
+            <input type="text" class="form-control got" id="title" name="title" th:field="*{title}">
+            <label for="content"><h5>내용</h5></label>
+            <textarea class="form-control got" id="content" name="content" rows="10" th:text="*{content}"></textarea>
+            <label for="writer"><h5>작성자</h5></label>
+            <input type="text" class="form-control got" id="writer" name="writer" th:field="*{writer}" readonly />
+        </form>
+        <br>
+        <div class="replies">
+            <form>
+                <input type="text" class="reply new writer form-control input-sm" placeholder="작성자">
+                <input type="text" class="reply new content form-control input-sm" placeholder="댓글">
+                <input type="button" class="reply new submit btn btn-outline-info" value="제출">
+            </form>
+            <table class="table">
+                <thead>
+                <tr>
+                    <td style="width: 10%">이름</td>
+                    <td style="width: 60%;">내용</td>
+                    <td style="width: 15%">수정일</td>
+                    <td style="width: 15%">작성일</td>
+                </tr>
+                </thead>
+                <tbody class="replier-tbody">
+
+                </tbody>
+            </table>
+            <div class="page">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script th:inline="javascript">
+    let curPage = 1
+
+    function postAction() {
+        let bno = [[${board.getBno()}]]
+        location.href='delete?bno='+bno
+    }
+
+    function previous() {
+        history.back();
+    }
+
+    function getReply(page) {
+        curPage = page
+        replyService.getTotal([[${board.getBno()}]], page, (e) => {
+            $(".page").html("")
+            if (e.prev)
+                $(".page").append("<code class='changePage' id='page_lt'>&lt;</code>")
+            for (i=e.startPage;i<=e.endPage;i++) {
+                if (i == page)
+                    $(".page").append("<code class='current' id='page_"+i+"'>"+i+"</code>")
+                else
+                    $(".page").append("<code class='changePage' id='page_"+i+"'>"+i+"</code>")
+            }
+            if (e.next)
+                $(".page").append("<code class='changePage' id='page_gt'>&gt;</code>")
+        })
+        replyService.getList([[${board.getBno()}]], page, e => {
+            $(".replier-tbody").html("")
+            e.forEach(e => {
+                $(".replier-tbody").append("<tr><td>"+e.replier+"</td><td>"+e.reply+"</td><td>"+e.updatedate+"</td><td>"+e.replydate+"</td></tr>")
+            })
+        }, (e) => console.log(e))
+    }
+
+    function submitReply() {
+        if ($(".reply.new.writer").val() == "" || $(".reply.new.content").val() == "")
+            return alert("사용자의 이름과 내용을 입력하여 주세요")
+        let bno = [[${board.getBno()}]]
+        replyService.add({replier: $(".reply.new.writer").val(), reply: $(".reply.new.content").val(), bno: bno}, (e) => {
+            console.log(e)
+            $(".reply.new.writer").val("")
+            $(".reply.new.content").val("")
+            getReply(curPage)
+        }, (e) => console.log(e))
+    }
+    window.onload = function () {
+        getReply(curPage)
+        $(".reply.new.submit").on("click", submitReply)
+        $(this).on("keydown", function (e) { if(e.keyCode == 27) previous() })
+        $(".page").on("click", function (e) {
+            console.log($(e.target).attr("id"))
+            switch ($(e.target).attr("id")) {
+                case "page_gt":
+                    replyService.getTotal([[${board.getBno()}]], curPage, (e) => {
+                        getReply(e.endPage+1)
+                    })
+                    break;
+                case "page_lt":
+                    replyService.getTotal([[${board.getBno()}]], curPage, (e) => {
+                        getReply(e.startPage-1)
+                    })
+                    break;
+                default:
+                    getReply($(e.target).attr("id").replaceAll("page_", ""))
+            }
+        })
+    }
+</script>
+</html>

@@ -3,8 +3,8 @@ package com.board.boardprac.controller;
 import com.board.boardprac.DevController.logger;
 import com.board.boardprac.beans.vo.Criteria;
 import com.board.boardprac.beans.vo.ReplyVO;
+import com.board.boardprac.dto.PageDTO;
 import com.board.boardprac.services.ReplyService;
-import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -50,7 +50,7 @@ public class ReplyController {
     @GetMapping("/pages/{bno:[0-9]*}/{page:[0-9]*}")
     public List<ReplyVO> getList(@PathVariable("bno") Long bno, @PathVariable("page") int page) {
         log.title("reply - list");
-        return replyService.getList(new Criteria(page), bno);
+        return replyService.getList(new Criteria(page, 5), bno);
     }
 
     // 댓글 조회
@@ -58,6 +58,13 @@ public class ReplyController {
     public ReplyVO get(@PathVariable("rno") Long rno) {
         log.title("get");
         return replyService.get(rno);
+    }
+
+    // 댓글 페이지 수 조회
+    @GetMapping("/pages/c/{bno:[0-9]*}/{page:[0-9]*}")
+    public PageDTO getPageCount(@PathVariable("bno") Long bno, @PathVariable("page") int page) {
+        log.title("get page count");
+        return new PageDTO(new Criteria(page, 5), replyService.getTotal(bno));
     }
 
     @PatchMapping(value = "/{rno:[0-9]*}", consumes = "application/json", produces = "text/plain; charset=utf-8")

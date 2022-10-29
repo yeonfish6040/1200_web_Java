@@ -1,11 +1,13 @@
 package com.board.boardprac.DevController;
 
 import com.board.boardprac.util.Colors;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.awt.*;
 
 @Slf4j
+@Getter
 public class logger {
     private boolean logging = true;
 
@@ -24,22 +26,19 @@ public class logger {
     }
 
     public void info(Object e) {
-        if (withClass)
-            if (doLog() && e != null)
-                log.info(Colors.GREEN+getCallerClassName()+Colors.END+": "+e.toString());
+        if (doLog() && e != null)
+            log.info(Colors.GREEN+(withClass?getCallerClassName():"")+Colors.END+": "+e.toString());
 
     }
 
     public void error(Object e) {
-        if (withClass)
-            if (doLog() && e != null)
-                log.error(Colors.RED+getCallerClassName()+": "+e.toString()+Colors.END);
+        if (doLog() && e != null)
+            log.error(Colors.RED+(withClass?getCallerClassName():"")+": "+e.toString()+Colors.END);
     }
 
     public void title(Object e) {
-        if (withClass)
-            if (doLog() && e != null)
-                log.info(Colors.GREEN+getCallerClassName()+Colors.END+": "+"\n===============================================\n"+e.toString()+"\n===============================================\n");
+        if (doLog() && e != null)
+            log.info(Colors.GREEN+(withClass?getCallerClassName():"")+Colors.END+": "+"\n===============================================\n"+e.toString()+"\n===============================================\n");
     }
 
     private static String getCallerClassName() {

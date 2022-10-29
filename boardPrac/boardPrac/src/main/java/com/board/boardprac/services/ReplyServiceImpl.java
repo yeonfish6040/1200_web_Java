@@ -39,6 +39,9 @@ public class ReplyServiceImpl implements ReplyService {
     }
 
     @Override
+    public int getTotal(Long bno) { return mapper.getTotal(bno); };
+
+    @Override
     public List<ReplyVO> getList(Criteria cri, Long bno) {
         return mapper.getList(cri, bno);
     }

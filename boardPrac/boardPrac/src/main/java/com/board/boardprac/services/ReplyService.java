@@ -12,5 +12,6 @@ public interface ReplyService {
     public ReplyVO get(Long rno);
     public boolean modify(ReplyVO replyVO);
     public boolean remove(Long rno);
+    public int getTotal(Long bno);
     public List<ReplyVO> getList(Criteria cri, Long bno);
 }
