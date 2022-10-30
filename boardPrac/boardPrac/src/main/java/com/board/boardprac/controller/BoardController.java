@@ -4,6 +4,7 @@ import com.board.boardprac.DevController.logger;
 import com.board.boardprac.beans.vo.BoardVO;
 import com.board.boardprac.beans.vo.Criteria;
 import com.board.boardprac.dto.PageDTO;
+import com.board.boardprac.services.AttachFileServiceImpl;
 import com.board.boardprac.services.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -13,6 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 
 @Controller
 @RequiredArgsConstructor
@@ -20,6 +22,8 @@ import javax.servlet.http.HttpServletRequest;
 public class BoardController {
     private logger log = new logger();
     private final BoardService service;
+
+    private final AttachFileServiceImpl attachFileService;
 
     @GetMapping("/list")
     public String list(Criteria cri, Model model) {
@@ -48,7 +52,21 @@ public class BoardController {
         log.info("----------------------------------------------");
         log.info("Register called: "+boardVO);
         log.info("----------------------------------------------");
+
         service.register(boardVO);
+
+        if (boardVO.getAttachFileVOList() != null) {
+            log.title("not null");
+            boardVO.getAttachFileVOList().forEach(attach -> {
+                try {
+                    attach.setBno(boardVO.getBno());
+                    log.info("upload success: "+attachFileService.upload(attach)+" | "+attach.toString());
+                } catch (Exception e) {
+                    log.error(e);
+                }
+            });
+        }
+
         rttr.addFlashAttribute("bno", boardVO.getBno());
 
         return new RedirectView("list");

@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Register(새 글 등록)</h1>
-    <form action="" method="post" id="registForm">
+    <form action="" method="POST" id="registForm">
         <h4>제목</h4>
         <input type="text" name="title" placeholder="title">
         <h4>내용</h4>
@@ -18,39 +18,110 @@
         <h4>작성자</h4>
         <input type="text" name="writer" placeholder="writer">
         <h4>첨부파일</h4>
-        <input type="file" name="uploadFile" multiple>
+        <div class="uploadDIv">
+            <input type="file" name="uploadFile" multiple>
+        </div>
         <div class="uploadResult">
-            <ul>
+            <ol>
 
-            </ul>
+            </ol>
         </div>
         <input type="submit" value="Register">
     </form>
 </body>
 <script>
-    text = ""
-    $("#content").on("change paste keyup input", () => {
+    // content
+    let text = ""
+
+
+    function upload() {
+        // upload file condition
+        let reg = new RegExp("(.*?)\.(exe|sh|alz|zip)")
+        let maxFileSize = 52428800
+
+        // put to file set
+        let formData = new FormData();
+        let inputFile = $("input[name='uploadFile']");
+        let file = inputFile[0].files
+        let aborted = new Array();
+        let success = 0;
+        for (i=0;i<file.length;i++) {
+            if (!( reg.test(file[i].name) || file[i].size>maxFileSize ) ) { formData.append("uploadFile", file[i]);success += 1; } else { aborted.push([file[i], reg.test(file[i].name), file[i].size>maxFileSize]) }
+        }
+
+        var alertUser = "";
+        if (aborted.length != 0) {
+            aborted.forEach( e => {
+                (() => {
+                    alertUser += "업로드 실패: " + e[0].name + "\n사유: ";
+                    console.log(e)
+                    if(e[1] == true)
+                        alertUser += "제한된 파일 형식입니다.(exe|sh|alz|zip) - " + e[0].name.split(".")[e[0].name.split(".").length - 1] + "\n";
+                    if(e[2] == true)
+                        alertUser += "파일이 너무 큽니다. (최대 50MB) - " + Math.ceil(e[0].size/1048576)+"MB";
+                    alertUser += "\n"
+                })()
+            })
+            alert(alertUser)
+        }
+
+
+        if (success != 0) {
+            // upload
+            attachServices.upload(formData, (e) => {
+                alert("이외의 "+success+"개의 파일이 정상적으로 업로드되었습니다.")
+                console.log(e)
+                showUploadFile(e)
+            })
+        }else{
+            alert("이외의 "+success+"개의 파일이 정상적으로 업로드되었습니다.")
+        }
+    }
+
+    function showUploadFile(uploadResultArr) {
+        upResult = $(".uploadResult ol")
+
+        let str = ""
+        $(uploadResultArr).each((i, obj) => {
+            if (!obj.image){
+                str += "<li data-path='"+obj.uploadPath+"' data-uuid='"+obj.uuid+"' data-filename='"+obj.fileName+"' data-type='"+obj.image+"' data-origin='"+obj.originalName+"'><img src='/img/attach.jpeg' width='20' height='20'></img>"+obj.originalName+"</li>"
+            }else {
+                str += "<li data-path='"+obj.uploadPath+"' data-uuid='"+obj.uuid+"' data-filename='"+obj.fileName+"' data-type='"+obj.image+"' data-origin='"+obj.originalName+"'><img src='/board/post/display?filename="+obj.fileName+"' width='20' height='20'></img>"+obj.originalName+"</li>"
+            }
+        })
+        upResult.append(str);
+    }
+
+    function submitForm(e) {
+        e.preventDefault()
+        form = $("form#registForm");
+        let str = ""
+
+        $(".uploadResult ol li").each((i, obj) => {
+            str += "<input type='hidden' name='attachFileVOList["+i+"].fileName' value='"+$(obj).data("filename")+"'>";
+            str += "<input type='hidden' name='attachFileVOList["+i+"].uuid' value='"+$(obj).data("uuid")+"'>";
+            str += "<input type='hidden' name='attachFileVOList["+i+"].uploadPath' value='"+$(obj).data("path")+"'>";
+            str += "<input type='hidden' name='attachFileVOList["+i+"].image' value='"+$(obj).data("type")+"'>";
+            str += "<input type='hidden' name='attachFileVOList["+i+"].originalName' value='"+$(obj).data("origin")+"'>";
+
+        })
+
+        form.append(str).submit()
+    }
+
+    function contentLimitCheck() {
         if (new Blob([$("#content").val()]).size > 2000) {
             alert("허용 가능한 게시물의 내용 크기는 2000byte 입니다.")
             $("#content").val(text);
         }else {
             text = $("#content").val();
         }
-    })
+    }
 
     window.onload = function () {
-        $("input[name='uploadFile']").on("change", function (e) {
-            let formData = new FormData();
-            let inputFile = $("input[name='uploadFile']");
-            let file = inputFile[0].files
-            console.log(file)
-            for (i=0;i<file.length;i++) {
-                formData.append("uploadFile", file[i])
-            }
-            attachServices.upload(formData, (e) => {
-                console.log(e)
-            })
-        })
+        $("#content").on("change paste keyup input", contentLimitCheck)
+        $("input[name='uploadFile']").on("change", upload)
+        $("input[type='submit']").on("click", submitForm)
     }
 </script>
 </html>

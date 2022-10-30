@@ -32,7 +32,7 @@ public class CommonExceptionAdvice {
         model.addAttribute("errmsg", e.getLocalizedMessage());
         model.addAttribute("errs", err.toString());
 
-        return "thymeleaf/error";
+        return "error";
     }
 
     @ExceptionHandler(NoHandlerFoundException.class)

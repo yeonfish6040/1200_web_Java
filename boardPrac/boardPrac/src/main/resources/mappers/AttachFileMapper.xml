@@ -3,8 +3,8 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.board.boardprac.mappers.AttachFileMapper">
     <insert id="insert">
-        insert into tbl_attach(uuid, uploadpath, filename, image, bno)
-        values (#{uuid}, #{uploadPath}, #{fileName}, #{image}, #{bno})
+        insert into tbl_attach(uuid, uploadpath, filename, image, bno, "ORIGINALNAME")
+        values (#{uuid}, #{uploadPath}, #{fileName}, #{image}, #{bno}, #{originalName})
     </insert>
     <delete id="delete">
         delete from tbl_attach where uuid like #{uuid}
